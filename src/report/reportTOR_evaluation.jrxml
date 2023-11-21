@@ -1,0 +1,2616 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="620" pageHeight="936" whenNoDataType="AllSectionsNoDetail" columnWidth="580" leftMargin="20" rightMargin="20" topMargin="80" bottomMargin="20" uuid="a1dbbb1b-8733-4245-bade-42e7993dc65d">
+	<property name="ireport.zoom" value="1.3636363636364122"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="1008"/>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 4">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 4_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 4_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 4_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 5">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 5_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 5_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 5_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 6">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 6_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 6_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 6_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 7">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 7_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 7_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 7_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 8">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 8_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 8_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 8_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 9">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 9_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 9_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 9_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 10">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 10_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 10_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 10_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 11">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 11_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 11_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 11_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 12">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 12_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 12_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 12_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 13">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 13_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 13_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 13_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 14">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 14_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 14_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 14_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 15">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 15_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 15_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 15_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 16">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 16_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 16_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 16_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 17">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 17_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 17_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 17_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="ItemDataSet1" uuid="ffd61f83-f6ea-4055-b44f-83948ae617da">
+		<field name="subj_type_1" class="java.lang.String"/>
+		<field name="subj_code_1" class="java.lang.String"/>
+		<field name="subj_desc_1" class="java.lang.String"/>
+		<field name="subj_unit_1" class="java.lang.Double"/>
+		<field name="subj_fg_1" class="java.lang.Double"/>
+		<field name="subj_sy_1" class="java.lang.String"/>
+		<field name="subj_type_2" class="java.lang.String"/>
+		<field name="subj_code_2" class="java.lang.String"/>
+		<field name="subj_desc_2" class="java.lang.String"/>
+		<field name="subj_unit_2" class="java.lang.Double"/>
+		<field name="subj_fg_2" class="java.lang.Double"/>
+		<field name="subj_type_3" class="java.lang.String"/>
+		<field name="subj_code_3" class="java.lang.String"/>
+		<field name="subj_desc_3" class="java.lang.String"/>
+		<field name="subj_unit_3" class="java.lang.Double"/>
+		<field name="subj_fg_3" class="java.lang.Double"/>
+		<field name="subj_type_4" class="java.lang.String"/>
+		<field name="subj_code_4" class="java.lang.String"/>
+		<field name="subj_desc_4" class="java.lang.String"/>
+		<field name="subj_unit_4" class="java.lang.Double"/>
+		<field name="subj_fg_4" class="java.lang.Double"/>
+	</subDataset>
+	<parameter name="STUD_FULLNAME" class="java.lang.String"/>
+	<parameter name="STUD_BDATE" class="java.lang.String"/>
+	<parameter name="STUD_SHS_ADM_DATE" class="java.lang.String"/>
+	<parameter name="STUD_SHS_GRAD_DATE" class="java.lang.String"/>
+	<parameter name="STUD_JHS_SCH_NAME" class="java.lang.String"/>
+	<parameter name="STUD_JHS_SCH_ADDRESS" class="java.lang.String"/>
+	<parameter name="STUD_JHS_AVG" class="java.lang.String"/>
+	<parameter name="STUD_JHS_SY" class="java.lang.String"/>
+	<parameter name="STUD_LRN" class="java.lang.String"/>
+	<parameter name="STUD_GENDER" class="java.lang.String"/>
+	<parameter name="STUD_SCHOOL_NAME_1" class="java.lang.String"/>
+	<parameter name="STUD_SCHOOL_NAME_2" class="java.lang.String"/>
+	<parameter name="STUD_SCHOOL_NAME_3" class="java.lang.String"/>
+	<parameter name="STUD_SCHOOL_NAME_4" class="java.lang.String"/>
+	<parameter name="STUD_SCHOOL_ID_1" class="java.lang.String"/>
+	<parameter name="STUD_SCHOOL_ID_2" class="java.lang.String"/>
+	<parameter name="STUD_SCHOOL_ID_3" class="java.lang.String"/>
+	<parameter name="STUD_SCHOOL_ID_4" class="java.lang.String"/>
+	<parameter name="STUD_GRADELEVEL_1" class="java.lang.String"/>
+	<parameter name="STUD_GRADELEVEL_2" class="java.lang.String"/>
+	<parameter name="STUD_GRADELEVEL_3" class="java.lang.String"/>
+	<parameter name="STUD_GRADELEVEL_4" class="java.lang.String"/>
+	<parameter name="STUD_STRAND_1" class="java.lang.String"/>
+	<parameter name="STUD_STRAND_2" class="java.lang.String"/>
+	<parameter name="STUD_STRAND_3" class="java.lang.String"/>
+	<parameter name="STUD_STRAND_4" class="java.lang.String"/>
+	<parameter name="STUD_SECTION_1" class="java.lang.String"/>
+	<parameter name="STUD_SECTION_2" class="java.lang.String"/>
+	<parameter name="STUD_SECTION_3" class="java.lang.String"/>
+	<parameter name="STUD_SECTION_4" class="java.lang.String"/>
+	<parameter name="STUD_SY_1" class="java.lang.String"/>
+	<parameter name="STUD_SY_2" class="java.lang.String"/>
+	<parameter name="STUD_SY_3" class="java.lang.String"/>
+	<parameter name="STUD_SY_4" class="java.lang.String"/>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["D:\\Systems Working\\SHRegistrarJAVAFxml\\src\\report\\"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="STUD_SEM_1" class="java.lang.String"/>
+	<parameter name="STUD_SEM_2" class="java.lang.String"/>
+	<parameter name="STUD_SEM_3" class="java.lang.String"/>
+	<parameter name="STUD_SEM_4" class="java.lang.String"/>
+	<parameter name="STUD_GPA_1" class="java.lang.String"/>
+	<parameter name="STUD_GPA_2" class="java.lang.String"/>
+	<parameter name="STUD_GPA_3" class="java.lang.String"/>
+	<parameter name="STUD_GPA_4" class="java.lang.String"/>
+	<parameter name="STUD_TOT_UNIT_1" class="java.lang.String"/>
+	<parameter name="STUD_TOT_UNIT_2" class="java.lang.String"/>
+	<parameter name="STUD_TOT_UNIT_3" class="java.lang.String"/>
+	<parameter name="STUD_TOT_UNIT_4" class="java.lang.String"/>
+	<parameter name="STUD_SUMMER_DATE1" class="java.lang.String"/>
+	<parameter name="STUD_SUMMER_DATE2" class="java.lang.String"/>
+	<parameter name="STUD_SUMMER_SCHOOLNAME1" class="java.lang.String"/>
+	<parameter name="STUD_SUMMER_SCHOOLID1" class="java.lang.String"/>
+	<parameter name="STUD_SUMMER_SCHOOLNAME2" class="java.lang.String"/>
+	<parameter name="STUD_SUMMER_SCHOOLID2" class="java.lang.String"/>
+	<parameter name="item1" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource" isForPrompting="false"/>
+	<parameter name="item2" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
+	<parameter name="item3" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource" isForPrompting="false"/>
+	<parameter name="item4" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource" isForPrompting="false"/>
+	<parameter name="g11_summerdate" class="java.lang.String"/>
+	<parameter name="g11_summersubjtype1" class="java.lang.String"/>
+	<parameter name="g11_summersubject1" class="java.lang.String"/>
+	<parameter name="g11_summer_fingrade1" class="java.lang.String"/>
+	<parameter name="g11_summer_remgrade1" class="java.lang.String"/>
+	<parameter name="g11_summer_recompgrade1" class="java.lang.String"/>
+	<parameter name="g11_summersubjtype2" class="java.lang.String"/>
+	<parameter name="g11_summersubject2" class="java.lang.String"/>
+	<parameter name="g11_summer_fingrade2" class="java.lang.String"/>
+	<parameter name="g11_summer_remgrade2" class="java.lang.String"/>
+	<parameter name="g11_summer_recompgrade2" class="java.lang.String"/>
+	<parameter name="g11_summersubjtype3" class="java.lang.String"/>
+	<parameter name="g11_summersubject3" class="java.lang.String"/>
+	<parameter name="g11_summer_fingrade3" class="java.lang.String"/>
+	<parameter name="g11_summer_remgrade3" class="java.lang.String"/>
+	<parameter name="g11_summer_recompgrade3" class="java.lang.String"/>
+	<parameter name="g11_summersubjtype4" class="java.lang.String"/>
+	<parameter name="g11_summersubject4" class="java.lang.String"/>
+	<parameter name="g11_summer_fingrade4" class="java.lang.String"/>
+	<parameter name="g11_summer_remgrade4" class="java.lang.String"/>
+	<parameter name="g11_summer_recompgrade4" class="java.lang.String"/>
+	<parameter name="g11_summersubjtype5" class="java.lang.String"/>
+	<parameter name="g11_summersubject5" class="java.lang.String"/>
+	<parameter name="g11_summer_fingrade5" class="java.lang.String"/>
+	<parameter name="g11_summer_remgrade5" class="java.lang.String"/>
+	<parameter name="g11_summer_recompgrade5" class="java.lang.String"/>
+	<parameter name="g12_summerdate" class="java.lang.String"/>
+	<parameter name="g12_summersubjtype1" class="java.lang.String"/>
+	<parameter name="g12_summersubject1" class="java.lang.String"/>
+	<parameter name="g12_summer_fingrade1" class="java.lang.String"/>
+	<parameter name="g12_summer_remgrade1" class="java.lang.String"/>
+	<parameter name="g12_summer_recompgrade1" class="java.lang.String"/>
+	<parameter name="g12_summersubjtype2" class="java.lang.String"/>
+	<parameter name="g12_summersubject2" class="java.lang.String"/>
+	<parameter name="g12_summer_fingrade2" class="java.lang.String"/>
+	<parameter name="g12_summer_remgrade2" class="java.lang.String"/>
+	<parameter name="g12_summer_recompgrade2" class="java.lang.String"/>
+	<parameter name="g12_summersubjtype3" class="java.lang.String"/>
+	<parameter name="g12_summersubject3" class="java.lang.String"/>
+	<parameter name="g12_summer_fingrade3" class="java.lang.String"/>
+	<parameter name="g12_summer_remgrade3" class="java.lang.String"/>
+	<parameter name="g12_summer_recompgrade3" class="java.lang.String"/>
+	<parameter name="g12_summersubjtype4" class="java.lang.String"/>
+	<parameter name="g12_summersubject4" class="java.lang.String"/>
+	<parameter name="g12_summer_fingrade4" class="java.lang.String"/>
+	<parameter name="g12_summer_remgrade4" class="java.lang.String"/>
+	<parameter name="g12_summer_recompgrade4" class="java.lang.String"/>
+	<parameter name="g12_summersubjtype5" class="java.lang.String"/>
+	<parameter name="g12_summersubject5" class="java.lang.String"/>
+	<parameter name="g12_summer_fingrade5" class="java.lang.String"/>
+	<parameter name="g12_summer_remgrade5" class="java.lang.String"/>
+	<parameter name="g12_summer_recompgrade5" class="java.lang.String"/>
+	<parameter name="GEN_DAY" class="java.lang.String"/>
+	<parameter name="GEN_MONTH_YEAR" class="java.lang.String"/>
+	<parameter name="GEN_ADMISSION" class="java.lang.String"/>
+	<parameter name="GEN_RECEIVER" class="java.lang.String"/>
+	<parameter name="GEN_DATE_RECEIVED" class="java.lang.String"/>
+	<parameter name="GEN_STRAND" class="java.lang.String"/>
+	<parameter name="GEN_AWARD" class="java.lang.String"/>
+	<parameter name="GEN_PURPOSE" class="java.lang.String"/>
+	<parameter name="GEN_STATEMENT" class="java.lang.String"/>
+	<parameter name="GEN_AVERAGE" class="java.lang.String"/>
+	<group name="grpHeader1" isStartNewPage="true" isReprintHeaderOnEachPage="true">
+		<groupExpression><![CDATA[$V{PAGE_NUMBER}]]></groupExpression>
+		<groupHeader>
+			<band height="85">
+				<staticText>
+					<reportElement x="1" y="28" width="82" height="14" uuid="5fa26657-bf5f-496c-bf9f-9c102d375b02"/>
+					<textElement>
+						<font size="10" isBold="true"/>
+					</textElement>
+					<text><![CDATA[GRADE LEVEL:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="1" y="42" width="70" height="14" uuid="64f9f4a6-6983-4b4d-8bf9-32904b999db9"/>
+					<textElement>
+						<font size="10" isBold="true"/>
+					</textElement>
+					<text><![CDATA[STRAND:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="1" y="14" width="70" height="14" uuid="4806be5a-ee25-411e-aa9d-28084f379455"/>
+					<textElement>
+						<font size="10" isBold="true"/>
+					</textElement>
+					<text><![CDATA[SCHOOL ID:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="1" y="0" width="70" height="14" uuid="7ad1ad48-759e-4416-b5ec-890482e7efd6"/>
+					<textElement>
+						<font size="10" isBold="true"/>
+					</textElement>
+					<text><![CDATA[SCHOOL:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="1" y="56" width="70" height="14" uuid="274346b8-1058-4de9-9c13-e7b8ecfaae9e"/>
+					<textElement>
+						<font size="10" isBold="true"/>
+					</textElement>
+					<text><![CDATA[SECTION:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="173" y="28" width="38" height="14" uuid="16a27003-1d85-4431-a0ce-4f9d422969ce"/>
+					<textElement>
+						<font size="10" isBold="true"/>
+					</textElement>
+					<text><![CDATA[SY:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="173" y="42" width="38" height="14" uuid="9fa5f952-410b-4b5e-b527-06b535b49646"/>
+					<textElement>
+						<font size="10" isBold="true"/>
+					</textElement>
+					<text><![CDATA[SEM:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="472" y="42" width="38" height="14" uuid="aac262b2-9990-41b1-b343-e95579fc44cb"/>
+					<textElement>
+						<font size="10" isBold="true"/>
+					</textElement>
+					<text><![CDATA[SEM:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="300" y="56" width="70" height="14" uuid="a5f12d73-1a03-421b-9448-46c8c8bfd8bf"/>
+					<textElement>
+						<font size="10" isBold="true"/>
+					</textElement>
+					<text><![CDATA[SECTION:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="300" y="42" width="70" height="14" uuid="78cc86f3-e7c8-474b-8b48-98d97f64df2d"/>
+					<textElement>
+						<font size="10" isBold="true"/>
+					</textElement>
+					<text><![CDATA[STRAND:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="472" y="28" width="38" height="14" uuid="6bcd01f4-0dac-450e-8a54-c068808e52f1"/>
+					<textElement>
+						<font size="10" isBold="true"/>
+					</textElement>
+					<text><![CDATA[SY:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="300" y="0" width="70" height="14" uuid="97243e52-04d4-4b12-96f2-e3257ab0ae38"/>
+					<textElement>
+						<font size="10" isBold="true"/>
+					</textElement>
+					<text><![CDATA[SCHOOL:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="300" y="14" width="70" height="14" uuid="4610e38e-ae62-464b-994d-d16af22f4fdd"/>
+					<textElement>
+						<font size="10" isBold="true"/>
+					</textElement>
+					<text><![CDATA[SCHOOL ID:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="300" y="28" width="81" height="14" uuid="663bd290-091e-4ca0-bccb-d274b6361e06"/>
+					<textElement>
+						<font size="10" isBold="true"/>
+					</textElement>
+					<text><![CDATA[GRADE LEVEL:]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="71" y="0" width="192" height="14" uuid="438e1dd7-431d-4477-8a37-bd8e9c7b4299"/>
+					<textFieldExpression><![CDATA[($V{PAGE_NUMBER} == 1)? $P{STUD_SCHOOL_NAME_1} : $P{STUD_SCHOOL_NAME_3}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="71" y="14" width="192" height="14" uuid="f2a133f2-9eea-46a2-af0b-142310297930"/>
+					<textFieldExpression><![CDATA[($V{PAGE_NUMBER} == 1)? $P{STUD_SCHOOL_ID_1} : $P{STUD_SCHOOL_ID_3}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="83" y="28" width="90" height="14" uuid="79dfdcb1-4a75-4f6c-8818-ba73f8309623"/>
+					<textFieldExpression><![CDATA[($V{PAGE_NUMBER} == 1)? (($P{STUD_GRADELEVEL_1} == null)? "N/A" : $P{STUD_GRADELEVEL_1}) : (($P{STUD_GRADELEVEL_3} == null)? "N/A" : $P{STUD_GRADELEVEL_3})]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="71" y="42" width="102" height="14" uuid="49ec541e-950c-4eb4-8fdc-ed2b2b4812d3"/>
+					<textFieldExpression><![CDATA[($V{PAGE_NUMBER} == 1)? (($P{STUD_STRAND_1} == null)? "N/A" : $P{STUD_STRAND_1}) : (($P{STUD_STRAND_3} == null)? "N/A" : $P{STUD_STRAND_3})]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="71" y="56" width="102" height="14" uuid="53669019-af89-438d-b955-dd27c5bf9175"/>
+					<textFieldExpression><![CDATA[($V{PAGE_NUMBER} == 1)? (($P{STUD_SECTION_1} == null)? "N/A" : $P{STUD_SECTION_1}) : (($P{STUD_SECTION_3} == null)? "N/A" : $P{STUD_SECTION_3})]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="211" y="28" width="89" height="14" uuid="6ba0f15f-7c09-4d3e-8d40-97861eafb39f"/>
+					<textFieldExpression><![CDATA[($V{PAGE_NUMBER} == 1)? (($P{STUD_SY_1} == null)? "N/A" : $P{STUD_SY_1}) : (($P{STUD_SY_3} == null)? "N/A" : $P{STUD_SY_3})]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="211" y="42" width="89" height="14" uuid="808b279f-fc94-43a0-ac9b-f5d25a89f20f"/>
+					<textFieldExpression><![CDATA[($V{PAGE_NUMBER} == 1)? (($P{STUD_SEM_1} == null)? "N/A" : "1st") : (($P{STUD_SEM_3} == null)? "N/A" : "1st")]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="370" y="0" width="192" height="14" uuid="476b720e-74bc-4a29-a840-2b0244f9f0f8"/>
+					<textFieldExpression><![CDATA[($V{PAGE_NUMBER} == 1)? $P{STUD_SCHOOL_NAME_2} : $P{STUD_SCHOOL_NAME_4}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="370" y="14" width="192" height="14" uuid="cc8da902-561e-4e14-b3ee-3bc8c0c719fd"/>
+					<textFieldExpression><![CDATA[($V{PAGE_NUMBER} == 1)?$P{STUD_SCHOOL_ID_2} : $P{STUD_SCHOOL_ID_4}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="375" y="28" width="90" height="14" uuid="67ecded1-2ca9-4206-ab1e-b05263be2684"/>
+					<textFieldExpression><![CDATA[($V{PAGE_NUMBER} == 1)? (($P{STUD_GRADELEVEL_2} == null)? "N/A" : $P{STUD_GRADELEVEL_2}) : (($P{STUD_GRADELEVEL_4} == null)? "N/A" : $P{STUD_GRADELEVEL_4})]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="510" y="28" width="70" height="14" uuid="e6683d45-686f-4b2e-8cf2-fba2e5f560c2"/>
+					<textFieldExpression><![CDATA[($V{PAGE_NUMBER} == 1)? (($P{STUD_SY_2} == null)? "N/A" : $P{STUD_SY_2}) : (($P{STUD_SY_4} == null)? "N/A" : $P{STUD_SY_4})]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="370" y="42" width="102" height="14" uuid="031cb686-46a4-474a-884a-675f29638466"/>
+					<textFieldExpression><![CDATA[($V{PAGE_NUMBER} == 1)? (($P{STUD_STRAND_2} == null)? "N/A" : $P{STUD_STRAND_2}) : (($P{STUD_STRAND_4} == null)? "N/A" : $P{STUD_STRAND_4})]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="510" y="42" width="70" height="14" uuid="cd0a14cf-907f-4fdc-92a2-ed44252e2af7"/>
+					<textFieldExpression><![CDATA[($V{PAGE_NUMBER} == 1)? (($P{STUD_SEM_2} == null)? "N/A" : "2nd") : (($P{STUD_SEM_4} == null)? "N/A" : "2nd")]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="370" y="57" width="102" height="14" uuid="8420d83f-7668-4508-817e-f6b3ca72ce4f"/>
+					<textFieldExpression><![CDATA[($V{PAGE_NUMBER} == 1)? (($P{STUD_SECTION_2} == null)? "N/A" : $P{STUD_SECTION_2}) : (($P{STUD_SECTION_4} == null)? "N/A" : $P{STUD_SECTION_4})]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band height="188">
+				<printWhenExpression><![CDATA[$P{STUD_SUMMER_DATE2} == "" || $P{STUD_SUMMER_DATE2} == null]]></printWhenExpression>
+				<staticText>
+					<reportElement x="1" y="13" width="149" height="14" isRemoveLineWhenBlank="true" uuid="3ccee4e3-e686-454a-a5a3-dbca9b357e89"/>
+					<textElement>
+						<font size="10" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Track/Strand Accomplished:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="352" y="13" width="161" height="14" isRemoveLineWhenBlank="true" uuid="ee6a8c49-6551-453c-976e-cc0d45883730"/>
+					<textElement>
+						<font size="10" isBold="true"/>
+					</textElement>
+					<text><![CDATA[SHS General Weighted Average:]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="513" y="13" width="31" height="14" uuid="4ab3ef67-76f1-4e54-8c7a-bc92e7acd9df"/>
+					<textElement textAlignment="Center">
+						<font isUnderline="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[($P{GEN_AVERAGE} == "" || $P{GEN_AVERAGE} == null)? "N/A" : $P{GEN_AVERAGE}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="1" y="28" width="149" height="14" isRemoveLineWhenBlank="true" uuid="11dca11a-4dd2-4716-85b9-6815c857eb3f"/>
+					<textElement>
+						<font size="10" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Awards/Honors Received: ]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="2" y="43" width="151" height="14" isRemoveLineWhenBlank="true" uuid="57fed6cd-6d09-4447-b78e-dcc099cddd67"/>
+					<textElement>
+						<font size="10" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Date of SHS Graduation:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="2" y="149" width="295" height="14" isRemoveLineWhenBlank="true" uuid="1d4ba149-ea7d-4eea-8a56-f62fc4fb6155"/>
+					<textElement textAlignment="Center">
+						<font size="10" isBold="true" isUnderline="true"/>
+					</textElement>
+					<text><![CDATA[CLAIRE F DUHAYLUNGSOD]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="2" y="164" width="295" height="14" isRemoveLineWhenBlank="true" uuid="85927247-325a-4305-9b38-fb66eb287722"/>
+					<textElement textAlignment="Center">
+						<font size="10" isBold="true"/>
+					</textElement>
+					<text><![CDATA[SHS Registrar]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="2" y="139" width="577" height="14" isRemoveLineWhenBlank="true" uuid="cb7af7df-7aa2-401c-8521-8dcb17fb9344"/>
+					<textElement>
+						<font size="10" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Certified by:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="93" y="64" width="389" height="14" isRemoveLineWhenBlank="true" uuid="a0544136-ba4a-4026-9504-961e9714e361"/>
+					<textElement textAlignment="Center">
+						<font size="10" isBold="true"/>
+					</textElement>
+					<text><![CDATA[TRANSFER]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="160" y="13" width="100" height="14" uuid="804bd115-c6ab-462a-9ec2-2413538771a7"/>
+					<textFieldExpression><![CDATA[($P{GEN_STRAND} == "" || $P{GEN_STRAND} == null)? "N/A" : $P{GEN_STRAND}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="160" y="28" width="384" height="14" uuid="dddc5e13-2692-4a1c-8338-cfa9aa766901"/>
+					<textFieldExpression><![CDATA[($P{GEN_AWARD} == "")? "N/A" : $P{GEN_AWARD}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="160" y="43" width="100" height="14" uuid="5cb62556-7340-4a78-888a-1550a2a381f9"/>
+					<textFieldExpression><![CDATA[($P{STUD_SHS_GRAD_DATE}=="" ||  $P{STUD_SHS_GRAD_DATE}==null)? "N/A" : $P{STUD_SHS_GRAD_DATE}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="1" y="81" width="577" height="55" uuid="883235b3-fa5a-43c2-a45f-23d12679ab35"/>
+					<textElement>
+						<paragraph lineSpacing="1_1_2"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{GEN_STATEMENT}]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupFooter>
+	</group>
+	<title>
+		<band height="199" splitType="Stretch">
+			<staticText>
+				<reportElement x="150" y="0" width="274" height="24" uuid="2549ac0d-c6d7-4d17-9d13-ffa1b532a026"/>
+				<textElement textAlignment="Center">
+					<font fontName="Matura MT Script Capitals" size="15"/>
+				</textElement>
+				<text><![CDATA[Ateneo de Zamboanga University]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="150" y="24" width="274" height="20" uuid="000216c1-a522-42d8-b0c4-b593de94cddd"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Zamboanga City]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="93" y="44" width="389" height="20" uuid="c706b6a5-eb9b-4ff5-853a-d70bb410ca3f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SENIOR HIGH SCHOOL STUDENT PERMANENT RECORD]]></text>
+			</staticText>
+			<image hAlign="Center">
+				<reportElement x="71" y="0" width="55" height="44" uuid="99e3a932-ce0b-41dd-8e0e-745cb458098f"/>
+				<imageExpression><![CDATA["image/adzu_seal.png"]]></imageExpression>
+			</image>
+			<image hAlign="Center">
+				<reportElement x="443" y="0" width="65" height="44" uuid="dcec9192-b707-496b-be56-b6bd4b5a61e7"/>
+				<imageExpression><![CDATA["image/deped2.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="0" y="84" width="154" height="14" uuid="a90d9e92-0ab9-4b9a-92b6-a65734ba7327"/>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Name:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="140" width="154" height="14" uuid="ec80a5f1-541e-40d7-a78b-c6227ea453d2"/>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Junior High School Address:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="112" width="178" height="14" uuid="77192dd9-361c-47fc-9cc1-e85ebc8157aa"/>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Date of SHS Admission (MM/DD/YY):]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="126" width="154" height="14" uuid="9a5c3b6a-33a4-4e00-a1c8-ec0f98605ed6"/>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Name of Junior High School:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="154" width="154" height="14" uuid="2ee5780a-d8af-4dcc-8142-f88bb40265ac"/>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[General Average:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="98" width="154" height="14" uuid="56c2ef70-bc27-452e-9a28-b358ca10c586"/>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Date of Birth (MM/DD/YY):]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="370" y="98" width="47" height="14" uuid="4d81116b-d2af-4bb7-a575-e7f367f41bb3"/>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[LRN:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="370" y="154" width="47" height="14" uuid="a344ab06-4566-46cb-b136-f718d5af1cdd"/>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SY:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="370" y="112" width="47" height="14" uuid="3c85930c-9f58-4319-b66d-5d6f22798d8e"/>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[GENDER:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="178" y="84" width="400" height="14" uuid="1e2d5503-483b-483e-b5a3-18d93cdd20e9"/>
+				<textFieldExpression><![CDATA[($P{STUD_FULLNAME}=="" ||  $P{STUD_FULLNAME}==null)? "N/A" : $P{STUD_FULLNAME}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="178" y="98" width="192" height="14" uuid="6782fccc-8b65-4055-8a98-92fa3d219a09"/>
+				<textFieldExpression><![CDATA[($P{STUD_BDATE}=="" ||  $P{STUD_BDATE}==null)? "N/A" : $P{STUD_BDATE}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="178" y="112" width="192" height="14" uuid="b23536ed-82cd-4f17-93a6-0d8ddf2051f8"/>
+				<textFieldExpression><![CDATA[($P{STUD_SHS_ADM_DATE}=="" ||  $P{STUD_SHS_ADM_DATE}==null)? "N/A" : $P{STUD_SHS_ADM_DATE}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="178" y="126" width="402" height="14" uuid="92b35151-cf7c-46f7-b853-027073f4296c"/>
+				<textFieldExpression><![CDATA[($P{STUD_JHS_SCH_NAME}=="" ||  $P{STUD_JHS_SCH_NAME}==null)? "N/A" : $P{STUD_JHS_SCH_NAME}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="178" y="140" width="402" height="14" uuid="5998d32f-68b9-4977-b4c0-b16f858bb513"/>
+				<textFieldExpression><![CDATA[($P{STUD_JHS_SCH_ADDRESS}=="" ||  $P{STUD_JHS_SCH_ADDRESS}==null)? "N/A" : $P{STUD_JHS_SCH_ADDRESS}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="178" y="154" width="192" height="14" uuid="ead9ca8e-8076-4827-9cd3-a873d4b3943b"/>
+				<textFieldExpression><![CDATA[($P{STUD_JHS_AVG}=="" || $P{STUD_JHS_AVG}==null)? "N/A" : $P{STUD_JHS_AVG}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="417" y="98" width="163" height="14" uuid="83d0d1c3-a775-453b-845f-39aa4faf2f50"/>
+				<textFieldExpression><![CDATA[($P{STUD_LRN}=="" ||  $P{STUD_LRN}==null)? "N/A" : $P{STUD_LRN}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="417" y="112" width="163" height="14" uuid="76d4bf50-8bde-471d-bff6-52bcb52b1621"/>
+				<textFieldExpression><![CDATA[($P{STUD_GENDER}=="" || $P{STUD_GENDER}==null)? "N/A" : $P{STUD_GENDER}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="417" y="154" width="163" height="14" uuid="8a6602d4-5550-46a4-8ee4-c6df2dc983fb"/>
+				<textFieldExpression><![CDATA[($P{STUD_JHS_SY}=="" || $P{STUD_JHS_SY}==null)? "N/A" : $P{STUD_JHS_SY}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Opaque" x="1" y="184" width="579" height="14" forecolor="#000000" backcolor="#CCCCFF" uuid="36ca6927-ed0d-496c-9bc6-6a377d674bef"/>
+				<box>
+					<pen lineWidth="0.25"/>
+					<topPen lineWidth="1.0" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SCHOLASTIC RECORD]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="2" y="0" width="45" height="14" uuid="4d1cde7d-41e0-450d-b48a-2976d515bb60"/>
+				<textElement>
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SF10-SHS]]></text>
+			</staticText>
+		</band>
+	</title>
+	<detail>
+		<band height="72" splitType="Stretch">
+			<componentElement>
+				<reportElement key="table 17" style="table 17" x="0" y="0" width="282" height="62" uuid="129a1e03-fc1e-4841-afcc-4cc683def2f6"/>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" whenNoDataType="AllSectionsNoDetail">
+					<datasetRun subDataset="ItemDataSet1" uuid="47a8ef89-70ca-4197-afdc-a2aad36ff121">
+						<dataSourceExpression><![CDATA[$P{item1}]]></dataSourceExpression>
+					</datasetRun>
+					<jr:columnGroup width="182" uuid="7b64fd78-3a73-4369-a8f8-6151c00e9fc4">
+						<jr:columnGroup width="182" uuid="79837bae-2011-4bf7-baed-baaa6bb86a2c">
+							<jr:columnGroup width="182" uuid="d31821b7-8da7-4488-ae0d-f2b7f7b45f3c">
+								<jr:columnHeader height="30" rowSpan="1">
+									<staticText>
+										<reportElement mode="Opaque" x="0" y="0" width="182" height="30" isRemoveLineWhenBlank="true" forecolor="#000000" backcolor="#CCCCFF" uuid="9dc0d2ec-d908-4645-97d7-6d0a38816a9b"/>
+										<box>
+											<pen lineColor="#000000"/>
+											<topPen lineWidth="1.0" lineColor="#000000"/>
+											<leftPen lineWidth="1.0" lineColor="#000000"/>
+											<bottomPen lineWidth="1.0" lineColor="#000000"/>
+											<rightPen lineWidth="1.0" lineColor="#000000"/>
+										</box>
+										<textElement textAlignment="Center" verticalAlignment="Middle">
+											<font isBold="true"/>
+										</textElement>
+										<text><![CDATA[SUBJECTS]]></text>
+									</staticText>
+								</jr:columnHeader>
+								<jr:column width="52" uuid="2e1cd24b-8cbb-471a-bb17-11a5abbe8935">
+									<jr:detailCell height="32" rowSpan="1">
+										<textField isStretchWithOverflow="true" isBlankWhenNull="false">
+											<reportElement stretchType="RelativeToBandHeight" x="0" y="0" width="52" height="32" uuid="8dd718e5-af11-45f5-8af5-b431d47e777e"/>
+											<box>
+												<pen lineWidth="1.0"/>
+												<topPen lineWidth="1.0"/>
+												<leftPen lineWidth="1.0"/>
+												<bottomPen lineWidth="1.0"/>
+												<rightPen lineWidth="1.0"/>
+											</box>
+											<textElement textAlignment="Center" verticalAlignment="Middle"/>
+											<textFieldExpression><![CDATA[$F{subj_type_1}]]></textFieldExpression>
+										</textField>
+									</jr:detailCell>
+								</jr:column>
+								<jr:column width="130" uuid="45da282e-5aab-4ea3-bab1-49010697c213">
+									<jr:detailCell height="32" rowSpan="1">
+										<textField isStretchWithOverflow="true" isBlankWhenNull="false">
+											<reportElement stretchType="RelativeToBandHeight" x="0" y="0" width="130" height="32" uuid="e3bc7089-257a-4e41-8719-2f07e068329c"/>
+											<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1">
+												<pen lineWidth="1.0"/>
+												<topPen lineWidth="1.0"/>
+												<leftPen lineWidth="1.0"/>
+												<bottomPen lineWidth="1.0"/>
+												<rightPen lineWidth="1.0"/>
+											</box>
+											<textElement verticalAlignment="Middle">
+												<font size="9"/>
+											</textElement>
+											<textFieldExpression><![CDATA[$F{subj_desc_1}]]></textFieldExpression>
+										</textField>
+									</jr:detailCell>
+								</jr:column>
+							</jr:columnGroup>
+						</jr:columnGroup>
+					</jr:columnGroup>
+					<jr:column width="28" uuid="a5be8ada-2214-4161-8465-3c5f5d10b989">
+						<jr:tableHeader height="0" rowSpan="1"/>
+						<jr:tableFooter height="0" rowSpan="1"/>
+						<jr:columnHeader height="30" rowSpan="1">
+							<staticText>
+								<reportElement mode="Opaque" x="0" y="0" width="28" height="30" isRemoveLineWhenBlank="true" forecolor="#000000" backcolor="#CCCCFF" uuid="8fd70d65-43e7-4f2a-9ee6-dd68b6280bcb"/>
+								<box>
+									<pen lineColor="#000000"/>
+									<topPen lineWidth="1.0" lineColor="#000000"/>
+									<leftPen lineWidth="1.0" lineColor="#000000"/>
+									<bottomPen lineWidth="1.0" lineColor="#000000"/>
+									<rightPen lineWidth="1.0" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font isBold="true"/>
+								</textElement>
+								<text><![CDATA[FG]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter height="0" rowSpan="1"/>
+						<jr:detailCell height="32" rowSpan="1">
+							<textField isStretchWithOverflow="true" pattern="###0" isBlankWhenNull="false">
+								<reportElement stretchType="RelativeToBandHeight" x="0" y="0" width="28" height="32" uuid="b0b1e798-34ba-48aa-ba99-819375fc841d"/>
+								<box>
+									<pen lineWidth="1.0"/>
+									<topPen lineWidth="1.0"/>
+									<leftPen lineWidth="1.0"/>
+									<bottomPen lineWidth="1.0"/>
+									<rightPen lineWidth="1.0"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[$F{subj_fg_1} == 0 ? "N/A" : $F{subj_fg_1}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="37" uuid="b96cbc54-9c8a-450f-8cb2-5eaef4b2dd7e">
+						<jr:tableHeader height="0" rowSpan="1"/>
+						<jr:tableFooter height="0" rowSpan="1"/>
+						<jr:columnHeader height="30" rowSpan="1">
+							<staticText>
+								<reportElement mode="Opaque" x="0" y="0" width="37" height="30" isRemoveLineWhenBlank="true" forecolor="#000000" backcolor="#CCCCFF" uuid="1273fb03-6b57-4a7b-9d54-ca2e98895178"/>
+								<box>
+									<pen lineColor="#000000"/>
+									<topPen lineWidth="1.0" lineColor="#000000"/>
+									<leftPen lineWidth="1.0" lineColor="#000000"/>
+									<bottomPen lineWidth="1.0" lineColor="#000000"/>
+									<rightPen lineWidth="1.0" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font isBold="true"/>
+								</textElement>
+								<text><![CDATA[Action]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter height="0" rowSpan="1"/>
+						<jr:detailCell height="32" rowSpan="1">
+							<textField isStretchWithOverflow="true" isBlankWhenNull="false">
+								<reportElement stretchType="RelativeToBandHeight" x="0" y="0" width="37" height="32" uuid="5fc12598-8c23-4c18-9565-7ce9c90e68d6"/>
+								<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1">
+									<pen lineWidth="1.0"/>
+									<topPen lineWidth="1.0"/>
+									<leftPen lineWidth="1.0"/>
+									<bottomPen lineWidth="1.0"/>
+									<rightPen lineWidth="1.0"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[( $F{subj_fg_1} > 0 ) ? ( $F{subj_fg_1} >= 75 ? "Passed" : "Failed" ) : "N/A"]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="36" uuid="cf23b31f-5212-4035-bf05-47473c9b0bd7">
+						<jr:tableHeader height="0" rowSpan="1"/>
+						<jr:tableFooter height="0" rowSpan="1"/>
+						<jr:columnHeader height="30" rowSpan="1">
+							<staticText>
+								<reportElement mode="Opaque" x="0" y="0" width="36" height="30" isRemoveLineWhenBlank="true" forecolor="#000000" backcolor="#CCCCFF" uuid="d89d5c51-7bba-4503-a32b-87ffe619a0fd"/>
+								<box>
+									<pen lineColor="#000000"/>
+									<topPen lineWidth="1.0" lineColor="#000000"/>
+									<leftPen lineWidth="1.0" lineColor="#000000"/>
+									<bottomPen lineWidth="1.0" lineColor="#000000"/>
+									<rightPen lineWidth="1.0" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font isBold="true"/>
+								</textElement>
+								<text><![CDATA[Unit(s)]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter height="0" rowSpan="1"/>
+						<jr:detailCell height="32" rowSpan="1">
+							<textField isStretchWithOverflow="true" isBlankWhenNull="false">
+								<reportElement stretchType="RelativeToBandHeight" x="0" y="0" width="36" height="32" uuid="0c643ada-2d23-4db1-846d-5a79bb3a1cb6"/>
+								<box>
+									<pen lineWidth="1.0"/>
+									<topPen lineWidth="1.0"/>
+									<leftPen lineWidth="1.0"/>
+									<bottomPen lineWidth="1.0"/>
+									<rightPen lineWidth="1.0"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[$F{subj_unit_1}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+			<componentElement>
+				<reportElement key="table 17" style="table 17" x="297" y="0" width="283" height="62" uuid="b576da72-4481-4602-a3a7-371d247e3de3"/>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" whenNoDataType="AllSectionsNoDetail">
+					<datasetRun subDataset="ItemDataSet1" uuid="8ca9759b-7b7e-4243-864c-ce209dff1567">
+						<dataSourceExpression><![CDATA[$P{item2}]]></dataSourceExpression>
+					</datasetRun>
+					<jr:columnGroup width="182" uuid="e3ec85f2-22b4-4e4b-901c-d0aa66e767a0">
+						<jr:columnGroup width="182" uuid="3e4566db-f844-47f8-a4d9-b66e5a08b11b">
+							<jr:columnGroup width="182" uuid="f634a8dd-c7f4-48ca-8873-5a14b57d86c3">
+								<jr:columnHeader height="30" rowSpan="1">
+									<staticText>
+										<reportElement mode="Opaque" x="0" y="0" width="182" height="30" isRemoveLineWhenBlank="true" forecolor="#000000" backcolor="#CCCCFF" uuid="57c80c8c-ac5b-42c9-a0c7-b2b3d4cfe283"/>
+										<box>
+											<pen lineColor="#000000"/>
+											<topPen lineWidth="1.0" lineColor="#000000"/>
+											<leftPen lineWidth="1.0" lineColor="#000000"/>
+											<bottomPen lineWidth="1.0" lineColor="#000000"/>
+											<rightPen lineWidth="1.0" lineColor="#000000"/>
+										</box>
+										<textElement textAlignment="Center" verticalAlignment="Middle">
+											<font isBold="true"/>
+										</textElement>
+										<text><![CDATA[SUBJECTS]]></text>
+									</staticText>
+								</jr:columnHeader>
+								<jr:column width="52" uuid="e288ec7d-93d9-4828-94ad-b76fecc0a222">
+									<jr:detailCell height="32" rowSpan="1">
+										<textField isBlankWhenNull="true">
+											<reportElement stretchType="RelativeToBandHeight" x="0" y="0" width="52" height="32" isRemoveLineWhenBlank="true" uuid="a400148b-71f2-41df-a16b-185f4423cb88"/>
+											<box>
+												<pen lineWidth="1.0"/>
+												<topPen lineWidth="1.0"/>
+												<leftPen lineWidth="1.0"/>
+												<bottomPen lineWidth="1.0"/>
+												<rightPen lineWidth="1.0"/>
+											</box>
+											<textElement textAlignment="Center" verticalAlignment="Middle"/>
+											<textFieldExpression><![CDATA[$F{subj_type_2}]]></textFieldExpression>
+										</textField>
+									</jr:detailCell>
+								</jr:column>
+								<jr:column width="130" uuid="d94836f6-f19e-46a2-a982-f11050717bdf">
+									<jr:detailCell height="32" rowSpan="1">
+										<textField isBlankWhenNull="true">
+											<reportElement stretchType="RelativeToBandHeight" x="0" y="0" width="130" height="32" isRemoveLineWhenBlank="true" uuid="7ed81f2f-18fd-438e-933b-bdccd9a8efc1"/>
+											<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1">
+												<pen lineWidth="1.0"/>
+												<topPen lineWidth="1.0"/>
+												<leftPen lineWidth="1.0"/>
+												<bottomPen lineWidth="1.0"/>
+												<rightPen lineWidth="1.0"/>
+											</box>
+											<textElement textAlignment="Left" verticalAlignment="Middle">
+												<font size="9"/>
+											</textElement>
+											<textFieldExpression><![CDATA[$F{subj_desc_2}]]></textFieldExpression>
+										</textField>
+									</jr:detailCell>
+								</jr:column>
+							</jr:columnGroup>
+						</jr:columnGroup>
+					</jr:columnGroup>
+					<jr:column width="28" uuid="83562a36-9d96-4664-89ee-2d7183cd3d8c">
+						<jr:tableHeader height="0" rowSpan="1"/>
+						<jr:tableFooter height="0" rowSpan="1"/>
+						<jr:columnHeader height="30" rowSpan="1">
+							<staticText>
+								<reportElement mode="Opaque" x="0" y="0" width="28" height="30" isRemoveLineWhenBlank="true" forecolor="#000000" backcolor="#CCCCFF" uuid="a355d4dd-f202-4b0a-bb28-440fb6c6addb"/>
+								<box>
+									<pen lineColor="#000000"/>
+									<topPen lineWidth="1.0" lineColor="#000000"/>
+									<leftPen lineWidth="1.0" lineColor="#000000"/>
+									<bottomPen lineWidth="1.0" lineColor="#000000"/>
+									<rightPen lineWidth="1.0" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font isBold="true"/>
+								</textElement>
+								<text><![CDATA[FG]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter height="0" rowSpan="1"/>
+						<jr:detailCell height="32" rowSpan="1">
+							<textField pattern="###0" isBlankWhenNull="true">
+								<reportElement stretchType="RelativeToBandHeight" x="0" y="0" width="28" height="32" isRemoveLineWhenBlank="true" uuid="0ea43dce-d0e5-4640-b47b-0c83ebe0726a"/>
+								<box>
+									<pen lineWidth="1.0"/>
+									<topPen lineWidth="1.0"/>
+									<leftPen lineWidth="1.0"/>
+									<bottomPen lineWidth="1.0"/>
+									<rightPen lineWidth="1.0"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[$F{subj_fg_2} == 0 ? "N/A" : $F{subj_fg_2}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="37" uuid="725b3295-6d2f-4bdf-a870-745ee05446b9">
+						<jr:tableHeader height="0" rowSpan="1"/>
+						<jr:tableFooter height="0" rowSpan="1"/>
+						<jr:columnHeader height="30" rowSpan="1">
+							<staticText>
+								<reportElement mode="Opaque" x="0" y="0" width="37" height="30" isRemoveLineWhenBlank="true" forecolor="#000000" backcolor="#CCCCFF" uuid="4ccbe098-6ddb-4ab1-bcc6-e25e83fe321f"/>
+								<box>
+									<pen lineColor="#000000"/>
+									<topPen lineWidth="1.0" lineColor="#000000"/>
+									<leftPen lineWidth="1.0" lineColor="#000000"/>
+									<bottomPen lineWidth="1.0" lineColor="#000000"/>
+									<rightPen lineWidth="1.0" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font isBold="true"/>
+								</textElement>
+								<text><![CDATA[Action]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter height="0" rowSpan="1"/>
+						<jr:detailCell height="32" rowSpan="1">
+							<textField isBlankWhenNull="true">
+								<reportElement stretchType="RelativeToBandHeight" x="0" y="0" width="37" height="32" isRemoveLineWhenBlank="true" uuid="87db53eb-5a27-4291-9f9a-3ee6804332e5"/>
+								<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1">
+									<pen lineWidth="1.0"/>
+									<topPen lineWidth="1.0"/>
+									<leftPen lineWidth="1.0"/>
+									<bottomPen lineWidth="1.0"/>
+									<rightPen lineWidth="1.0"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[( $F{subj_fg_2} > 0 ) ? ( $F{subj_fg_2} >= 75 ? "Passed" : "Failed" ) : "N/A"]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="36" uuid="511ffe05-b000-419b-978e-5d1d2cd96c07">
+						<jr:tableHeader height="0" rowSpan="1"/>
+						<jr:tableFooter height="0" rowSpan="1"/>
+						<jr:columnHeader height="30" rowSpan="1">
+							<staticText>
+								<reportElement mode="Opaque" x="0" y="0" width="36" height="30" isRemoveLineWhenBlank="true" forecolor="#000000" backcolor="#CCCCFF" uuid="cd3156bb-31aa-4c61-bbd9-c37784a2be68"/>
+								<box>
+									<pen lineColor="#000000"/>
+									<topPen lineWidth="1.0" lineColor="#000000"/>
+									<leftPen lineWidth="1.0" lineColor="#000000"/>
+									<bottomPen lineWidth="1.0" lineColor="#000000"/>
+									<rightPen lineWidth="1.0" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font isBold="true"/>
+								</textElement>
+								<text><![CDATA[Unit(s)]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter height="0" rowSpan="1"/>
+						<jr:detailCell height="32" rowSpan="1">
+							<textField isBlankWhenNull="true">
+								<reportElement stretchType="RelativeToBandHeight" x="0" y="0" width="36" height="32" isRemoveLineWhenBlank="true" uuid="22ab8414-4a3d-4e83-a8d0-4eee91fbf73f"/>
+								<box>
+									<pen lineWidth="1.0"/>
+									<topPen lineWidth="1.0"/>
+									<leftPen lineWidth="1.0"/>
+									<bottomPen lineWidth="1.0"/>
+									<rightPen lineWidth="1.0"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[$F{subj_unit_2}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+		</band>
+		<band height="192">
+			<textField>
+				<reportElement x="249" y="0" width="35" height="21" isRemoveLineWhenBlank="true" uuid="9f87d48a-0cc7-4e24-8524-e039027bb5ca"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($V{PAGE_NUMBER} == 1)?
+    $P{STUD_TOT_UNIT_1} + " units " :
+    $P{STUD_TOT_UNIT_3} + " units "]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="1" y="0" width="184" height="20" uuid="b075a140-b9f9-41a1-8b58-7ddc52fc4ea7"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[GWA:]]></text>
+			</staticText>
+			<textField pattern="###0.00">
+				<reportElement x="185" y="0" width="28" height="21" isRemoveLineWhenBlank="true" uuid="6c3d3e79-42e1-4d8b-8701-0ae357eff9dd"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($V{PAGE_NUMBER} == 1)?
+    (($P{STUD_GPA_1} != "0.0" ) ? $P{STUD_GPA_1} : "N/A") :
+    ($P{STUD_GPA_3} != "0.0" ) ? $P{STUD_GPA_3} : "N/A"]]></textFieldExpression>
+			</textField>
+			<textField pattern="###0.00" isBlankWhenNull="true">
+				<reportElement x="479" y="0" width="29" height="21" isRemoveLineWhenBlank="true" uuid="7117b3a6-757b-4fd6-9ec1-c482a10a32cf"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($V{PAGE_NUMBER} == 1)?
+    (($P{STUD_GPA_2} != "0.0" ) ? $P{STUD_GPA_2} : "N/A") :
+    ($P{STUD_GPA_4} != "0.0" ) ? $P{STUD_GPA_4} : "N/A"]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="544" y="0" width="35" height="21" isRemoveLineWhenBlank="true" uuid="de178558-642e-400d-85ab-da9d7c74c1cf"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($V{PAGE_NUMBER} == 1)?
+    $P{STUD_TOT_UNIT_2} + " units " :
+    $P{STUD_TOT_UNIT_4} + " units "]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="296" y="0" width="176" height="21" uuid="5be7eb37-8b05-4d24-be51-be4d9d62333f"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[GWA:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="296" y="64" width="66" height="14" isRemoveLineWhenBlank="true" uuid="3719e48f-f946-42eb-9271-6d1b78ed1069">
+					<printWhenExpression><![CDATA[$V{PAGE_NUMBER} == 1]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SCHOOL ID:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="195" y="50" width="384" height="14" isRemoveLineWhenBlank="true" uuid="63b05a13-863d-4286-963a-9e787d8f6c5f">
+					<printWhenExpression><![CDATA[$V{PAGE_NUMBER} == 1]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $P{STUD_SUMMER_DATE1}=="" ||  $P{STUD_SUMMER_DATE1}==null) ? "N/A" :$P{STUD_SUMMER_DATE1}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="362" y="64" width="218" height="14" isRemoveLineWhenBlank="true" uuid="08b83f00-0673-49df-9b2e-f29035da7fc3">
+					<printWhenExpression><![CDATA[$V{PAGE_NUMBER} == 1]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $P{STUD_SUMMER_SCHOOLID1}=="" ||  $P{STUD_SUMMER_SCHOOLID1}==null)  ? "N/A" : $P{STUD_SUMMER_SCHOOLID1}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="46" y="64" width="250" height="14" isRemoveLineWhenBlank="true" uuid="3c5086c4-76fa-4f14-9cc9-d49416d7116a">
+					<printWhenExpression><![CDATA[$V{PAGE_NUMBER} == 1]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $P{STUD_SUMMER_SCHOOLNAME1}=="" ||  $P{STUD_SUMMER_SCHOOLNAME1}==null)  ? "N/A" : $P{STUD_SUMMER_SCHOOLNAME1}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="64" width="47" height="14" isRemoveLineWhenBlank="true" uuid="89114bda-f4d2-4c28-a8e9-3ae0955f82ee">
+					<printWhenExpression><![CDATA[$V{PAGE_NUMBER} == 1]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SCHOOL:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="50" width="196" height="14" isRemoveLineWhenBlank="true" uuid="0e1b8814-ae8e-418c-92f8-3e2564b9c146">
+					<printWhenExpression><![CDATA[$V{PAGE_NUMBER} == 1]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[REMEDIAL CLASSES CONDUCTED ON:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="301" y="80" width="60" height="26" forecolor="#000000" backcolor="#CCCCFF" uuid="b8590ed0-845c-4377-a1b4-bbfb06f7949a"/>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Sem Final Grade]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="1" y="106" width="83" height="14" uuid="00173cb3-1f95-49d7-a18f-ad18a65ba1d7"/>
+				<box leftPadding="1">
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $P{g11_summersubjtype1}=="" ||  $P{g11_summersubjtype1}==null) ? "N/A" :$P{g11_summersubjtype1}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Opaque" x="1" y="80" width="300" height="26" forecolor="#000000" backcolor="#CCCCFF" uuid="a6fcf352-0625-41ba-a675-e12fbce50b3d"/>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SUBJECTS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="361" y="80" width="60" height="26" forecolor="#000000" backcolor="#CCCCFF" uuid="d1ccdddb-a84e-45a6-86ee-47be533d2375"/>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Remedial Class Mark]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="84" y="120" width="217" height="14" uuid="316e1c67-cf2c-498f-8366-71a052a6bc59"/>
+				<box leftPadding="1">
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $P{g11_summersubject2}=="" ||  $P{g11_summersubject2}==null) ? "N/A" :$P{g11_summersubject2}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Opaque" x="496" y="80" width="65" height="26" forecolor="#000000" backcolor="#CCCCFF" uuid="c906d887-c6b6-4fb6-8ba9-949a9c14a58b"/>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Action Taken]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="84" y="106" width="217" height="14" uuid="2d6a52af-9da2-46ee-9e3e-076a3d53225e"/>
+				<box leftPadding="1">
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $P{g11_summersubject1}=="" ||  $P{g11_summersubject1}==null) ? "N/A" :$P{g11_summersubject1}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="1" y="120" width="83" height="14" uuid="8f9e2b69-50a8-4733-993e-8ad4d527c038"/>
+				<box leftPadding="1">
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $P{g11_summersubjtype2}=="" ||  $P{g11_summersubjtype2}==null) ? "N/A" :$P{g11_summersubjtype2}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Opaque" x="421" y="80" width="75" height="26" forecolor="#000000" backcolor="#CCCCFF" uuid="d9839f4f-8a91-4018-9886-f076fcc9e798"/>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Recomputed Final Grade]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="84" y="134" width="217" height="14" uuid="dda6d07f-d195-49bf-9194-e291c49d15b1"/>
+				<box leftPadding="1">
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $P{g11_summersubject3}=="" ||  $P{g11_summersubject3}==null) ? "N/A" :$P{g11_summersubject3}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="1" y="134" width="83" height="14" uuid="5402a538-ef7f-4765-8a64-aa49d28bb9c0"/>
+				<box leftPadding="1">
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $P{g11_summersubjtype3}=="" ||  $P{g11_summersubjtype3}==null) ? "N/A" :$P{g11_summersubjtype3}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="301" y="106" width="60" height="14" uuid="344223a8-63c1-4c4e-a67e-1d2385b1ed7e"/>
+				<box leftPadding="1">
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $P{g11_summer_fingrade1}=="" ||  $P{g11_summer_fingrade1}==null) ? "N/A" :$P{g11_summer_fingrade1}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="301" y="120" width="60" height="14" uuid="682f6d9c-a599-47f5-a1e4-62a615a24ad6"/>
+				<box leftPadding="1">
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $P{g11_summer_fingrade2}=="" ||  $P{g11_summer_fingrade2}==null) ? "N/A" :$P{g11_summer_fingrade2}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="301" y="134" width="60" height="14" uuid="d9d506ca-9c55-4a27-91c7-28248e15a362"/>
+				<box leftPadding="1">
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $P{g11_summer_fingrade3}=="" ||  $P{g11_summer_fingrade3}==null) ? "N/A" :$P{g11_summer_fingrade3}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="361" y="106" width="60" height="14" uuid="cc61937a-1f4b-46fa-bf71-a3f811e629f8"/>
+				<box leftPadding="1">
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $P{g11_summer_remgrade1}=="" ||  $P{g11_summer_remgrade1}==null) ? "N/A" :$P{g11_summer_remgrade1}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="361" y="120" width="60" height="14" uuid="12b1c9e0-bd0b-41c2-8565-96100ee789ce"/>
+				<box leftPadding="1">
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $P{g11_summer_remgrade2}=="" ||  $P{g11_summer_remgrade2}==null) ? "N/A" :$P{g11_summer_remgrade2}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="361" y="134" width="60" height="14" uuid="8507b44f-29f9-4e98-81ab-7e5e1dfc8b5a"/>
+				<box leftPadding="1">
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $P{g11_summer_remgrade3}=="" ||  $P{g11_summer_remgrade3}==null) ? "N/A" :$P{g11_summer_remgrade3}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="421" y="106" width="75" height="14" uuid="43b0c8fd-a483-48a6-b7ba-f23d28c39929"/>
+				<box leftPadding="1">
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $P{g11_summer_recompgrade1}=="" ||  $P{g11_summer_recompgrade1}==null) ? "N/A" :$P{g11_summer_recompgrade1}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="421" y="120" width="75" height="14" uuid="efaa11bc-927b-4364-bb98-baa02e39ff92"/>
+				<box leftPadding="1">
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $P{g11_summer_recompgrade2}=="" ||  $P{g11_summer_recompgrade2}==null) ? "N/A" :$P{g11_summer_recompgrade2}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="421" y="134" width="75" height="14" uuid="a7c36eeb-c3f5-47cc-9e75-2ccaa17baf9c"/>
+				<box leftPadding="1">
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $P{g11_summer_recompgrade3}=="" ||  $P{g11_summer_recompgrade3}==null) ? "N/A" :$P{g11_summer_recompgrade3}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="496" y="106" width="65" height="14" uuid="a97418d6-4667-4b9e-b5bc-7d79941783a8"/>
+				<box leftPadding="1">
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($P{g11_summer_recompgrade1}=="" ||  $P{g11_summer_recompgrade1}==null) ? "N/A" : ((Double.parseDouble($P{g11_summer_recompgrade1}) < 74.5) ? "Failed" : "Passed")]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="496" y="120" width="65" height="14" uuid="f6872057-cc26-423d-8555-5325e261c8ff"/>
+				<box leftPadding="1">
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($P{g11_summer_recompgrade2}=="" ||  $P{g11_summer_recompgrade2}==null) ? "N/A" : ((Double.parseDouble($P{g11_summer_recompgrade2}) < 74.5) ? "Failed" : "Passed")]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="496" y="134" width="65" height="14" uuid="eba849ff-716e-402a-ba3f-e80f5e93b340"/>
+				<box leftPadding="1">
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($P{g11_summer_recompgrade3}=="" ||  $P{g11_summer_recompgrade3}==null) ? "N/A" : ((Double.parseDouble($P{g11_summer_recompgrade3}) < 74.5) ? "Failed" : "Passed")]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="421" y="148" width="75" height="14" uuid="83089b27-4073-49a3-b00b-1da017e0649a"/>
+				<box leftPadding="1">
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $P{g11_summer_recompgrade4}=="" ||  $P{g11_summer_recompgrade4}==null) ? "N/A" :$P{g11_summer_recompgrade4}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="361" y="148" width="60" height="14" uuid="e8c624ce-9f62-45e4-989c-9e24839d86b6"/>
+				<box leftPadding="1">
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $P{g11_summer_remgrade4}=="" ||  $P{g11_summer_remgrade4}==null) ? "N/A" :$P{g11_summer_remgrade4}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="496" y="148" width="65" height="14" uuid="d787b467-4d3a-4fe6-bc8b-f5eaf8b4093a"/>
+				<box leftPadding="1">
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($P{g11_summer_recompgrade4}=="" ||  $P{g11_summer_recompgrade4}==null) ? "N/A" : ((Double.parseDouble($P{g11_summer_recompgrade4}) < 74.5) ? "Failed" : "Passed")]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="84" y="148" width="217" height="14" uuid="37edd273-e16e-489b-8d14-029caeed3d04"/>
+				<box leftPadding="1">
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $P{g11_summersubject4}=="" ||  $P{g11_summersubject4}==null) ? "N/A" :$P{g11_summersubject4}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="1" y="148" width="83" height="14" uuid="a4797d86-572c-4f93-a765-f8f48c281643"/>
+				<box leftPadding="1">
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $P{g11_summersubjtype4}=="" ||  $P{g11_summersubjtype4}==null) ? "N/A" :$P{g11_summersubjtype4}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="301" y="148" width="60" height="14" uuid="1df3e7a1-3773-46c7-9535-d7fa64edea7f"/>
+				<box leftPadding="1">
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $P{g11_summer_fingrade4}=="" ||  $P{g11_summer_fingrade4}==null) ? "N/A" :$P{g11_summer_fingrade4}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="84" y="162" width="217" height="14" uuid="48f43e2a-fe20-41f5-9399-0196252c5451"/>
+				<box leftPadding="1">
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $P{g11_summersubject5}=="" ||  $P{g11_summersubject5}==null) ? "N/A" :$P{g11_summersubject5}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="1" y="162" width="83" height="14" uuid="a6148e14-14ca-4f52-8765-17f9101f5c5a"/>
+				<box leftPadding="1">
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $P{g11_summersubjtype5}=="" ||  $P{g11_summersubjtype5}==null) ? "N/A" :$P{g11_summersubjtype5}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="421" y="162" width="75" height="14" uuid="2338745a-5af1-4b08-b3b6-f945f8143418"/>
+				<box leftPadding="1">
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $P{g11_summer_recompgrade5}=="" ||  $P{g11_summer_recompgrade5}==null) ? "N/A" :$P{g11_summer_recompgrade5}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="301" y="162" width="60" height="14" uuid="db892c15-bfc5-48d9-87e3-e9849bbf0b01"/>
+				<box leftPadding="1">
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $P{g11_summer_fingrade5}=="" ||  $P{g11_summer_fingrade5}==null) ? "N/A" :$P{g11_summer_fingrade5}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="496" y="162" width="65" height="14" uuid="cd7d0d65-9eb1-43b4-937e-65f4d9cf47a5"/>
+				<box leftPadding="1">
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($P{g11_summer_recompgrade5}=="" ||  $P{g11_summer_recompgrade5}==null) ? "N/A" : ((Double.parseDouble($P{g11_summer_recompgrade5}) < 74.5) ? "Failed" : "Passed")]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="361" y="162" width="60" height="14" uuid="d6cb0260-c971-421d-a198-9e7b71f00e93"/>
+				<box leftPadding="1">
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $P{g11_summer_remgrade5}=="" ||  $P{g11_summer_remgrade5}==null) ? "N/A" :$P{g11_summer_remgrade5}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="74">
+			<componentElement>
+				<reportElement key="table 17" style="table 17" x="1" y="0" width="282" height="62" uuid="3ccb3a16-3f5b-43ca-878e-72173f6260bd"/>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" whenNoDataType="AllSectionsNoDetail">
+					<datasetRun subDataset="ItemDataSet1" uuid="0e36f5af-5e3f-4365-aa00-d40208533d39">
+						<dataSourceExpression><![CDATA[$P{item3}]]></dataSourceExpression>
+					</datasetRun>
+					<jr:columnGroup width="182" uuid="a5dc0cc6-f860-43fc-86f1-799baf44455f">
+						<jr:columnGroup width="182" uuid="00224e82-20f8-42b8-8229-3c57dbf6fa3f">
+							<jr:columnGroup width="182" uuid="4e217a5b-4d99-4dd3-9c64-7c4f54223b85">
+								<jr:columnHeader height="30" rowSpan="1">
+									<staticText>
+										<reportElement mode="Opaque" x="0" y="0" width="182" height="30" isRemoveLineWhenBlank="true" forecolor="#000000" backcolor="#CCCCFF" uuid="c0d58b0f-720d-4735-abb6-62f6d41c76f0"/>
+										<box>
+											<pen lineColor="#000000"/>
+											<topPen lineWidth="1.0" lineColor="#000000"/>
+											<leftPen lineWidth="1.0" lineColor="#000000"/>
+											<bottomPen lineWidth="1.0" lineColor="#000000"/>
+											<rightPen lineWidth="1.0" lineColor="#000000"/>
+										</box>
+										<textElement textAlignment="Center" verticalAlignment="Middle">
+											<font isBold="true"/>
+										</textElement>
+										<text><![CDATA[SUBJECTS]]></text>
+									</staticText>
+								</jr:columnHeader>
+								<jr:column width="52" uuid="ef8aed0c-9048-4d04-9ccc-440c477abf46">
+									<jr:detailCell height="32" rowSpan="1">
+										<textField isStretchWithOverflow="true" isBlankWhenNull="false">
+											<reportElement stretchType="RelativeToBandHeight" x="0" y="0" width="52" height="32" uuid="036104ab-e4a8-4485-9691-c38e69805554"/>
+											<box>
+												<pen lineWidth="1.0"/>
+												<topPen lineWidth="1.0"/>
+												<leftPen lineWidth="1.0"/>
+												<bottomPen lineWidth="1.0"/>
+												<rightPen lineWidth="1.0"/>
+											</box>
+											<textElement textAlignment="Center" verticalAlignment="Middle"/>
+											<textFieldExpression><![CDATA[$F{subj_type_3}]]></textFieldExpression>
+										</textField>
+									</jr:detailCell>
+								</jr:column>
+								<jr:column width="130" uuid="0c21cd4d-e16d-4e00-90e3-075c948ec3a9">
+									<jr:detailCell height="32" rowSpan="1">
+										<textField isStretchWithOverflow="true" isBlankWhenNull="false">
+											<reportElement stretchType="RelativeToBandHeight" x="0" y="0" width="130" height="32" uuid="f589992a-7aa6-4fd2-acf7-2f518efbd4b2"/>
+											<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1">
+												<pen lineWidth="1.0"/>
+												<topPen lineWidth="1.0"/>
+												<leftPen lineWidth="1.0"/>
+												<bottomPen lineWidth="1.0"/>
+												<rightPen lineWidth="1.0"/>
+											</box>
+											<textElement verticalAlignment="Middle">
+												<font size="9"/>
+											</textElement>
+											<textFieldExpression><![CDATA[$F{subj_desc_3}]]></textFieldExpression>
+										</textField>
+									</jr:detailCell>
+								</jr:column>
+							</jr:columnGroup>
+						</jr:columnGroup>
+					</jr:columnGroup>
+					<jr:column width="28" uuid="62f11f30-7e07-49be-b0e9-bf0b8964f4bb">
+						<jr:tableHeader height="0" rowSpan="1"/>
+						<jr:tableFooter height="0" rowSpan="1"/>
+						<jr:columnHeader height="30" rowSpan="1">
+							<staticText>
+								<reportElement mode="Opaque" x="0" y="0" width="28" height="30" isRemoveLineWhenBlank="true" forecolor="#000000" backcolor="#CCCCFF" uuid="e2587fbb-0c48-44ce-90f4-0f1fbc2f769c"/>
+								<box>
+									<pen lineColor="#000000"/>
+									<topPen lineWidth="1.0" lineColor="#000000"/>
+									<leftPen lineWidth="1.0" lineColor="#000000"/>
+									<bottomPen lineWidth="1.0" lineColor="#000000"/>
+									<rightPen lineWidth="1.0" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font isBold="true"/>
+								</textElement>
+								<text><![CDATA[FG]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter height="0" rowSpan="1"/>
+						<jr:detailCell height="32" rowSpan="1">
+							<textField isStretchWithOverflow="true" pattern="###0" isBlankWhenNull="false">
+								<reportElement stretchType="RelativeToBandHeight" x="0" y="0" width="28" height="32" uuid="4e5ac3fd-adab-4907-8e9d-d3748f98f35d"/>
+								<box>
+									<pen lineWidth="1.0"/>
+									<topPen lineWidth="1.0"/>
+									<leftPen lineWidth="1.0"/>
+									<bottomPen lineWidth="1.0"/>
+									<rightPen lineWidth="1.0"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[$F{subj_fg_3} == 0 ? "N/A" : $F{subj_fg_3}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="37" uuid="60976308-9bec-41de-8646-dcc18c15bd04">
+						<jr:tableHeader height="0" rowSpan="1"/>
+						<jr:tableFooter height="0" rowSpan="1"/>
+						<jr:columnHeader height="30" rowSpan="1">
+							<staticText>
+								<reportElement mode="Opaque" x="0" y="0" width="37" height="30" isRemoveLineWhenBlank="true" forecolor="#000000" backcolor="#CCCCFF" uuid="0e8256d1-4deb-4cb4-8f9e-78576d0e6ecf"/>
+								<box>
+									<pen lineColor="#000000"/>
+									<topPen lineWidth="1.0" lineColor="#000000"/>
+									<leftPen lineWidth="1.0" lineColor="#000000"/>
+									<bottomPen lineWidth="1.0" lineColor="#000000"/>
+									<rightPen lineWidth="1.0" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font isBold="true"/>
+								</textElement>
+								<text><![CDATA[Action]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter height="0" rowSpan="1"/>
+						<jr:detailCell height="32" rowSpan="1">
+							<textField isStretchWithOverflow="true" isBlankWhenNull="false">
+								<reportElement stretchType="RelativeToBandHeight" x="0" y="0" width="37" height="32" uuid="9f6178d8-049e-42bd-a72e-a9982caea94f"/>
+								<box>
+									<pen lineWidth="1.0"/>
+									<topPen lineWidth="1.0"/>
+									<leftPen lineWidth="1.0"/>
+									<bottomPen lineWidth="1.0"/>
+									<rightPen lineWidth="1.0"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[( $F{subj_fg_3} > 0 ) ? ( $F{subj_fg_3} >= 75 ? "Passed" : "Failed" ) : "N/A"]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="36" uuid="acecff19-319c-4d3b-b4fb-bc46b8c24cf0">
+						<jr:tableHeader height="0" rowSpan="1"/>
+						<jr:tableFooter height="0" rowSpan="1"/>
+						<jr:columnHeader height="30" rowSpan="1">
+							<staticText>
+								<reportElement mode="Opaque" x="0" y="0" width="36" height="30" isRemoveLineWhenBlank="true" forecolor="#000000" backcolor="#CCCCFF" uuid="f3641a68-382d-46bf-b5f3-432e3eb38608"/>
+								<box>
+									<pen lineColor="#000000"/>
+									<topPen lineWidth="1.0" lineColor="#000000"/>
+									<leftPen lineWidth="1.0" lineColor="#000000"/>
+									<bottomPen lineWidth="1.0" lineColor="#000000"/>
+									<rightPen lineWidth="1.0" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font isBold="true"/>
+								</textElement>
+								<text><![CDATA[Unit(s)]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter height="0" rowSpan="1"/>
+						<jr:detailCell height="32" rowSpan="1">
+							<textField isStretchWithOverflow="true" isBlankWhenNull="false">
+								<reportElement stretchType="RelativeToBandHeight" x="0" y="0" width="36" height="32" uuid="c754db1b-8c03-402f-a203-69823b424dd9"/>
+								<box>
+									<pen lineWidth="1.0"/>
+									<topPen lineWidth="1.0"/>
+									<leftPen lineWidth="1.0"/>
+									<bottomPen lineWidth="1.0"/>
+									<rightPen lineWidth="1.0"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[$F{subj_unit_3}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+			<componentElement>
+				<reportElement key="table 17" style="table 17" x="296" y="0" width="282" height="62" uuid="a5d83110-1b72-40d0-a95d-3384db036979"/>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" whenNoDataType="AllSectionsNoDetail">
+					<datasetRun subDataset="ItemDataSet1" uuid="ef11ac42-6cfe-4927-a996-9e0fca1eede3">
+						<dataSourceExpression><![CDATA[$P{item4}]]></dataSourceExpression>
+					</datasetRun>
+					<jr:columnGroup width="182" uuid="2a426f2a-ea13-4833-aa76-870ca5321c45">
+						<jr:columnGroup width="182" uuid="a48e85fe-f42a-4a68-980f-6967b5ca33a2">
+							<jr:columnGroup width="182" uuid="8a1f28a2-90d6-4569-94a8-72207fcdf925">
+								<jr:columnHeader height="30" rowSpan="1">
+									<staticText>
+										<reportElement mode="Opaque" x="0" y="0" width="182" height="30" isRemoveLineWhenBlank="true" forecolor="#000000" backcolor="#CCCCFF" uuid="bdceda66-8ecb-499d-afc5-3ae9df5a7dac"/>
+										<box>
+											<pen lineColor="#000000"/>
+											<topPen lineWidth="1.0" lineColor="#000000"/>
+											<leftPen lineWidth="1.0" lineColor="#000000"/>
+											<bottomPen lineWidth="1.0" lineColor="#000000"/>
+											<rightPen lineWidth="1.0" lineColor="#000000"/>
+										</box>
+										<textElement textAlignment="Center" verticalAlignment="Middle">
+											<font isBold="true"/>
+										</textElement>
+										<text><![CDATA[SUBJECTS]]></text>
+									</staticText>
+								</jr:columnHeader>
+								<jr:column width="52" uuid="0c7f41a4-f666-43c3-9a65-fb441cf04030">
+									<jr:detailCell height="32" rowSpan="1">
+										<textField isStretchWithOverflow="true" isBlankWhenNull="false">
+											<reportElement stretchType="RelativeToBandHeight" x="0" y="0" width="52" height="32" uuid="b02f889e-6808-4f4c-aee7-51b29a873b0e"/>
+											<box>
+												<pen lineWidth="1.0"/>
+												<topPen lineWidth="1.0"/>
+												<leftPen lineWidth="1.0"/>
+												<bottomPen lineWidth="1.0"/>
+												<rightPen lineWidth="1.0"/>
+											</box>
+											<textElement textAlignment="Center" verticalAlignment="Middle"/>
+											<textFieldExpression><![CDATA[$F{subj_type_4}]]></textFieldExpression>
+										</textField>
+									</jr:detailCell>
+								</jr:column>
+								<jr:column width="130" uuid="df73d7c4-0401-415f-97c6-8719809aa0aa">
+									<jr:detailCell height="32" rowSpan="1">
+										<textField isStretchWithOverflow="true" isBlankWhenNull="false">
+											<reportElement stretchType="RelativeToBandHeight" x="0" y="0" width="130" height="32" uuid="dc5c20c2-5b80-40fc-bd06-e3fe610d7712"/>
+											<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1">
+												<pen lineWidth="1.0"/>
+												<topPen lineWidth="1.0"/>
+												<leftPen lineWidth="1.0"/>
+												<bottomPen lineWidth="1.0"/>
+												<rightPen lineWidth="1.0"/>
+											</box>
+											<textElement verticalAlignment="Middle"/>
+											<textFieldExpression><![CDATA[$F{subj_desc_4}]]></textFieldExpression>
+										</textField>
+									</jr:detailCell>
+								</jr:column>
+							</jr:columnGroup>
+						</jr:columnGroup>
+					</jr:columnGroup>
+					<jr:column width="28" uuid="f340e359-8586-4ce3-9595-da0b58900e0a">
+						<jr:tableHeader height="0" rowSpan="1"/>
+						<jr:tableFooter height="0" rowSpan="1"/>
+						<jr:columnHeader height="30" rowSpan="1">
+							<staticText>
+								<reportElement mode="Opaque" x="0" y="0" width="28" height="30" isRemoveLineWhenBlank="true" forecolor="#000000" backcolor="#CCCCFF" uuid="8801dcbe-7382-47fb-b2aa-49eae2afe798"/>
+								<box>
+									<pen lineColor="#000000"/>
+									<topPen lineWidth="1.0" lineColor="#000000"/>
+									<leftPen lineWidth="1.0" lineColor="#000000"/>
+									<bottomPen lineWidth="1.0" lineColor="#000000"/>
+									<rightPen lineWidth="1.0" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font isBold="true"/>
+								</textElement>
+								<text><![CDATA[FG]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter height="0" rowSpan="1"/>
+						<jr:detailCell height="32" rowSpan="1">
+							<textField isStretchWithOverflow="true" pattern="###0" isBlankWhenNull="false">
+								<reportElement stretchType="RelativeToBandHeight" x="0" y="0" width="28" height="32" uuid="e00e1886-2996-46ab-992c-4071cf10ed11"/>
+								<box>
+									<pen lineWidth="1.0"/>
+									<topPen lineWidth="1.0"/>
+									<leftPen lineWidth="1.0"/>
+									<bottomPen lineWidth="1.0"/>
+									<rightPen lineWidth="1.0"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[$F{subj_fg_4} == 0 ? "N/A" : $F{subj_fg_4}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="37" uuid="d5940825-385a-410d-a478-92d026fc23ac">
+						<jr:tableHeader height="0" rowSpan="1"/>
+						<jr:tableFooter height="0" rowSpan="1"/>
+						<jr:columnHeader height="30" rowSpan="1">
+							<staticText>
+								<reportElement mode="Opaque" x="0" y="0" width="37" height="30" isRemoveLineWhenBlank="true" forecolor="#000000" backcolor="#CCCCFF" uuid="85edb1f7-412c-427f-9a2d-91a2619ca5be"/>
+								<box>
+									<pen lineColor="#000000"/>
+									<topPen lineWidth="1.0" lineColor="#000000"/>
+									<leftPen lineWidth="1.0" lineColor="#000000"/>
+									<bottomPen lineWidth="1.0" lineColor="#000000"/>
+									<rightPen lineWidth="1.0" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font isBold="true"/>
+								</textElement>
+								<text><![CDATA[Action]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter height="0" rowSpan="1"/>
+						<jr:detailCell height="32" rowSpan="1">
+							<textField isStretchWithOverflow="true" isBlankWhenNull="false">
+								<reportElement stretchType="RelativeToBandHeight" x="0" y="0" width="37" height="32" uuid="7727d90f-809c-410f-9e7b-b36cb2c7675d"/>
+								<box>
+									<pen lineWidth="1.0"/>
+									<topPen lineWidth="1.0"/>
+									<leftPen lineWidth="1.0"/>
+									<bottomPen lineWidth="1.0"/>
+									<rightPen lineWidth="1.0"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[( $F{subj_fg_4} > 0 ) ? ( $F{subj_fg_4} >= 75 ? "Passed" : "Failed" ) : "N/A"]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="36" uuid="bb799c33-d884-459d-81a3-684b60841eba">
+						<jr:tableHeader height="0" rowSpan="1"/>
+						<jr:tableFooter height="0" rowSpan="1"/>
+						<jr:columnHeader height="30" rowSpan="1">
+							<staticText>
+								<reportElement mode="Opaque" x="0" y="0" width="36" height="30" isRemoveLineWhenBlank="true" forecolor="#000000" backcolor="#CCCCFF" uuid="1abfe24b-e22e-4b72-8fc2-33b447207be0"/>
+								<box>
+									<pen lineColor="#000000"/>
+									<topPen lineWidth="1.0" lineColor="#000000"/>
+									<leftPen lineWidth="1.0" lineColor="#000000"/>
+									<bottomPen lineWidth="1.0" lineColor="#000000"/>
+									<rightPen lineWidth="1.0" lineColor="#000000"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font isBold="true"/>
+								</textElement>
+								<text><![CDATA[Unit(s)]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter height="0" rowSpan="1"/>
+						<jr:detailCell height="32" rowSpan="1">
+							<textField isStretchWithOverflow="true" isBlankWhenNull="false">
+								<reportElement stretchType="RelativeToBandHeight" x="0" y="0" width="36" height="32" uuid="d59d1fe8-5608-4bb6-9f91-7e2adf34968b"/>
+								<box>
+									<pen lineWidth="1.0"/>
+									<topPen lineWidth="1.0"/>
+									<leftPen lineWidth="1.0"/>
+									<bottomPen lineWidth="1.0"/>
+									<rightPen lineWidth="1.0"/>
+								</box>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[$F{subj_unit_4}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+		</band>
+		<band height="192">
+			<staticText>
+				<reportElement x="295" y="0" width="176" height="21" uuid="0e2f6d98-c734-49ba-a3f0-52dcd9b5185c"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[GWA:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="0" width="184" height="20" uuid="93e23b1a-e51d-4311-ba25-11ac7fd825b8"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[GWA:]]></text>
+			</staticText>
+			<textField pattern="###0.00" isBlankWhenNull="true">
+				<reportElement x="478" y="0" width="29" height="21" isRemoveLineWhenBlank="true" uuid="c4c10f06-9b18-49d9-a2b7-62a184cfc738"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($V{PAGE_NUMBER} == 1)?
+    (($P{STUD_GPA_2} != "0.0" ) ? $P{STUD_GPA_2} : "N/A") :
+    ($P{STUD_GPA_4} != "0.0" ) ? $P{STUD_GPA_4} : "N/A"]]></textFieldExpression>
+			</textField>
+			<textField pattern="###0.00">
+				<reportElement x="184" y="0" width="28" height="21" isRemoveLineWhenBlank="true" uuid="01d79400-f4c4-442a-aaa6-8f88d7a3b926"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($V{PAGE_NUMBER} == 1)?
+    (($P{STUD_GPA_1} != "0.0" ) ? $P{STUD_GPA_1} : "N/A") :
+    ($P{STUD_GPA_3} != "0.0" ) ? $P{STUD_GPA_3} : "N/A"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="248" y="0" width="35" height="21" isRemoveLineWhenBlank="true" uuid="ff03e83e-fd93-47d1-b4a3-a4cdc2c2bd09"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($V{PAGE_NUMBER} == 1)?
+    $P{STUD_TOT_UNIT_1} + " units " :
+    $P{STUD_TOT_UNIT_3} + " units "]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="543" y="0" width="35" height="21" isRemoveLineWhenBlank="true" uuid="15ae68a5-c4d3-4adb-8e50-f09555020495"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($V{PAGE_NUMBER} == 1)?
+    $P{STUD_TOT_UNIT_2} + " units " :
+    $P{STUD_TOT_UNIT_4} + " units "]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="50" width="196" height="14" isRemoveLineWhenBlank="true" uuid="f36537e1-a613-40f8-a62c-2c077319f3a7">
+					<printWhenExpression><![CDATA[$V{PAGE_NUMBER} == 2]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[REMEDIAL CLASSES CONDUCTED ON:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="195" y="50" width="384" height="14" isRemoveLineWhenBlank="true" uuid="01566bcd-9e19-474f-a669-7e674fcfb512">
+					<printWhenExpression><![CDATA[$V{PAGE_NUMBER} == 2]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $P{STUD_SUMMER_DATE2}=="" ||  $P{STUD_SUMMER_DATE2}==null) ? "N/A" :$P{STUD_SUMMER_DATE2}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="64" width="47" height="14" isRemoveLineWhenBlank="true" uuid="5a22e515-51e7-4b60-9915-4627a93c956d">
+					<printWhenExpression><![CDATA[$V{PAGE_NUMBER} == 2]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SCHOOL:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="46" y="64" width="250" height="14" isRemoveLineWhenBlank="true" uuid="44fce2d8-19d5-41f6-a5a0-389fb1bada03">
+					<printWhenExpression><![CDATA[$V{PAGE_NUMBER} == 2]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $P{STUD_SUMMER_SCHOOLNAME2}=="" ||  $P{STUD_SUMMER_SCHOOLNAME2}==null)  ? "N/A" : $P{STUD_SUMMER_SCHOOLNAME2}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="296" y="64" width="66" height="14" isRemoveLineWhenBlank="true" uuid="d06f23c4-9b4f-4f3c-aa97-6d8eeae72d7f">
+					<printWhenExpression><![CDATA[$V{PAGE_NUMBER} == 2]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SCHOOL ID:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="362" y="64" width="218" height="14" isRemoveLineWhenBlank="true" uuid="0200610f-e73c-4436-9837-1b97920b2a2b">
+					<printWhenExpression><![CDATA[$V{PAGE_NUMBER} == 2]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $P{STUD_SUMMER_SCHOOLID2}=="" ||  $P{STUD_SUMMER_SCHOOLID2}==null)  ? "N/A" : $P{STUD_SUMMER_SCHOOLID2}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Opaque" x="1" y="80" width="300" height="26" forecolor="#000000" backcolor="#CCCCFF" uuid="23bc6dce-d4c0-4cbf-a3cd-f61cce900e0e"/>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SUBJECTS]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="1" y="106" width="83" height="14" uuid="19b9c547-7d72-4232-94b4-31877db39581"/>
+				<box leftPadding="1">
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $P{g12_summersubjtype1}=="" ||  $P{g12_summersubjtype1}==null) ? "N/A" :$P{g12_summersubjtype1}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="1" y="120" width="83" height="14" uuid="ff3cf4ae-d484-4e1f-9a1e-ff98e8cd9143"/>
+				<box leftPadding="1">
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $P{g12_summersubjtype2}=="" ||  $P{g12_summersubjtype2}==null) ? "N/A" :$P{g12_summersubjtype2}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="1" y="134" width="83" height="14" uuid="c52ee74f-e8d7-450e-9b40-06bd7aeeb1b4"/>
+				<box leftPadding="1">
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $P{g12_summersubjtype3}=="" ||  $P{g12_summersubjtype3}==null) ? "N/A" :$P{g12_summersubjtype3}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="1" y="148" width="83" height="14" uuid="2de32e01-63ac-441e-9cca-3f66f65c881f"/>
+				<box leftPadding="1">
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $P{g12_summersubjtype4}=="" ||  $P{g12_summersubjtype4}==null) ? "N/A" :$P{g12_summersubjtype4}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="1" y="162" width="83" height="14" uuid="64a73c95-1bde-4293-9bdb-59f2304208fa"/>
+				<box leftPadding="1">
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $P{g12_summersubjtype5}=="" ||  $P{g12_summersubjtype5}==null) ? "N/A" :$P{g12_summersubjtype5}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="84" y="106" width="217" height="14" uuid="9464bfb6-45ab-4ced-b1f7-9f0b96c24e38"/>
+				<box leftPadding="1">
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $P{g12_summersubject1}=="" ||  $P{g12_summersubject1}==null) ? "N/A" :$P{g12_summersubject1}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="84" y="120" width="217" height="14" uuid="a1668341-df4b-4879-920c-e515326fb2eb"/>
+				<box leftPadding="1">
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $P{g12_summersubject2}=="" ||  $P{g12_summersubject2}==null) ? "N/A" :$P{g12_summersubject2}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="84" y="134" width="217" height="14" uuid="5a649c45-fe4b-4e4d-b45f-43d627f77075"/>
+				<box leftPadding="1">
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $P{g12_summersubject3}=="" ||  $P{g12_summersubject3}==null) ? "N/A" :$P{g12_summersubject3}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="84" y="148" width="217" height="14" uuid="e2534887-4864-44df-b4e0-6a6129f24268"/>
+				<box leftPadding="1">
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $P{g12_summersubject4}=="" ||  $P{g12_summersubject4}==null) ? "N/A" :$P{g12_summersubject4}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="84" y="162" width="217" height="14" uuid="e99c1a2d-21df-428d-bfef-a54aae0d9a03"/>
+				<box leftPadding="1">
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $P{g12_summersubject5}=="" ||  $P{g12_summersubject5}==null) ? "N/A" :$P{g12_summersubject5}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Opaque" x="301" y="80" width="60" height="26" forecolor="#000000" backcolor="#CCCCFF" uuid="b6b4d487-e4f3-4fb6-a4c7-793b723c4d56"/>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Sem Final Grade]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="301" y="106" width="60" height="14" uuid="66feafe7-8613-48bf-a257-3af336aadfa5"/>
+				<box leftPadding="1">
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $P{g12_summer_fingrade1}=="" ||  $P{g12_summer_fingrade1}==null) ? "N/A" :$P{g12_summer_fingrade1}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="301" y="120" width="60" height="14" uuid="5b6f456a-d95b-4ee2-ade7-9649a4aa3155"/>
+				<box leftPadding="1">
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $P{g12_summer_fingrade2}=="" ||  $P{g12_summer_fingrade2}==null) ? "N/A" :$P{g12_summer_fingrade2}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="301" y="134" width="60" height="14" uuid="1bcd65a1-c423-4144-b10a-8a1fcd7f6957"/>
+				<box leftPadding="1">
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $P{g12_summer_fingrade3}=="" ||  $P{g12_summer_fingrade3}==null) ? "N/A" :$P{g12_summer_fingrade3}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="301" y="148" width="60" height="14" uuid="eda416a0-52d4-475e-a837-6647996e5807"/>
+				<box leftPadding="1">
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $P{g12_summer_fingrade4}=="" ||  $P{g12_summer_fingrade4}==null) ? "N/A" :$P{g12_summer_fingrade4}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="301" y="162" width="60" height="14" uuid="c97fb0b2-34ef-4078-a42c-000716dd6ed7"/>
+				<box leftPadding="1">
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $P{g12_summer_fingrade5}=="" ||  $P{g12_summer_fingrade5}==null) ? "N/A" :$P{g12_summer_fingrade5}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Opaque" x="361" y="80" width="60" height="26" forecolor="#000000" backcolor="#CCCCFF" uuid="640259d2-f932-4679-b059-4f713e7c8526"/>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Remedial Class Mark]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="361" y="106" width="60" height="14" uuid="5900e0a1-9f4e-460b-958f-608a332d5d60"/>
+				<box leftPadding="1">
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $P{g12_summer_remgrade1}=="" ||  $P{g12_summer_remgrade1}==null) ? "N/A" :$P{g12_summer_remgrade1}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="361" y="120" width="60" height="14" uuid="9d105540-f5c6-43b3-8373-ab62ef8aaf55"/>
+				<box leftPadding="1">
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $P{g12_summer_remgrade2}=="" ||  $P{g12_summer_remgrade2}==null) ? "N/A" :$P{g12_summer_remgrade2}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="361" y="134" width="60" height="14" uuid="1f512112-fb89-4824-afc1-dbeee64e2b88"/>
+				<box leftPadding="1">
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $P{g12_summer_remgrade3}=="" ||  $P{g12_summer_remgrade3}==null) ? "N/A" :$P{g12_summer_remgrade3}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="361" y="148" width="60" height="14" uuid="b4cb2d71-1fd2-40f7-bd50-fdb22b2a89d5"/>
+				<box leftPadding="1">
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $P{g12_summer_remgrade4}=="" ||  $P{g12_summer_remgrade4}==null) ? "N/A" :$P{g12_summer_remgrade4}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="361" y="162" width="60" height="14" uuid="87b14e89-3156-42a9-8621-0c880cd88efb"/>
+				<box leftPadding="1">
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $P{g12_summer_remgrade5}=="" ||  $P{g12_summer_remgrade5}==null) ? "N/A" :$P{g12_summer_remgrade5}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Opaque" x="421" y="80" width="75" height="26" forecolor="#000000" backcolor="#CCCCFF" uuid="920aaa64-250c-4c5a-bd26-103bf972fb78"/>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Recomputed Final Grade]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="421" y="106" width="75" height="14" uuid="6031c214-303d-44ad-a5f8-fff008ddce11"/>
+				<box leftPadding="1">
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $P{g12_summer_recompgrade1}=="" ||  $P{g12_summer_recompgrade1}==null) ? "N/A" :$P{g12_summer_recompgrade1}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="421" y="120" width="75" height="14" uuid="48c01e18-e644-45f6-bfe5-d69adec0ad96"/>
+				<box leftPadding="1">
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $P{g12_summer_recompgrade2}=="" ||  $P{g12_summer_recompgrade2}==null) ? "N/A" :$P{g12_summer_recompgrade2}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="421" y="134" width="75" height="14" uuid="96840a47-5faa-44f8-aaf7-b1caac6ef546"/>
+				<box leftPadding="1">
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $P{g12_summer_recompgrade3}=="" ||  $P{g12_summer_recompgrade3}==null) ? "N/A" :$P{g12_summer_recompgrade3}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="421" y="148" width="75" height="14" uuid="b27bfa77-3194-44b4-ba7d-658af96bb177"/>
+				<box leftPadding="1">
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $P{g12_summer_recompgrade4}=="" ||  $P{g12_summer_recompgrade4}==null) ? "N/A" :$P{g12_summer_recompgrade4}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="421" y="162" width="75" height="14" uuid="f10d2420-7ef9-439d-aa32-6be8691e199a"/>
+				<box leftPadding="1">
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $P{g12_summer_recompgrade5}=="" ||  $P{g12_summer_recompgrade5}==null) ? "N/A" :$P{g12_summer_recompgrade5}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Opaque" x="496" y="80" width="65" height="26" forecolor="#000000" backcolor="#CCCCFF" uuid="b292fef0-3382-48d0-9aa4-1f0004d8ab87"/>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Action Taken]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="496" y="106" width="65" height="14" uuid="20e9d5fa-40e0-4b1e-bb94-2b4a76944f23"/>
+				<box leftPadding="1">
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($P{g12_summer_recompgrade1}=="" ||  $P{g12_summer_recompgrade1}==null) ? "N/A" : ((Double.parseDouble($P{g12_summer_recompgrade1}) < 74.5) ? "Failed" : "Passed")]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="496" y="120" width="65" height="14" uuid="09bee89b-f194-477e-97b1-9337575cafff"/>
+				<box leftPadding="1">
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($P{g12_summer_recompgrade2}=="" ||  $P{g12_summer_recompgrade2}==null) ? "N/A" : ((Double.parseDouble($P{g12_summer_recompgrade2}) < 74.5) ? "Failed" : "Passed")]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="496" y="134" width="65" height="14" uuid="0e5b7ddb-45a8-489d-931e-8005ced64d8b"/>
+				<box leftPadding="1">
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($P{g12_summer_recompgrade3}=="" ||  $P{g12_summer_recompgrade3}==null) ? "N/A" : ((Double.parseDouble($P{g12_summer_recompgrade3}) < 74.5) ? "Failed" : "Passed")]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="496" y="148" width="65" height="14" uuid="13ff83be-495e-4ada-9a24-4bc23ea1a759"/>
+				<box leftPadding="1">
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($P{g12_summer_recompgrade4}=="" ||  $P{g12_summer_recompgrade4}==null) ? "N/A" : ((Double.parseDouble($P{g12_summer_recompgrade4}) < 74.5) ? "Failed" : "Passed")]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="496" y="162" width="65" height="14" uuid="27c4adee-ae3e-4aae-8aec-dd249909bbf7"/>
+				<box leftPadding="1">
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($P{g12_summer_recompgrade5}=="" ||  $P{g12_summer_recompgrade5}==null) ? "N/A" : ((Double.parseDouble($P{g12_summer_recompgrade5}) < 74.5) ? "Failed" : "Passed")]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="34">
+			<textField evaluationTime="Report">
+				<reportElement x="540" y="0" width="40" height="20" uuid="c2ac4933-c479-44a9-8f83-1e7465a7516b"/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="460" y="0" width="80" height="20" uuid="ff4415bd-db92-4abf-9fbd-55b7ceec82c4"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>

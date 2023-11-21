@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="719.0" prefWidth="1140.0" styleClass="control-background" stylesheets="@../style/generic-theme.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <VBox prefHeight="203.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0" styleClass="hbox-header">
+               <children>
+                  <Label text="Enroll Student" textFill="#fcf5f5">
+                     <font>
+                        <Font name="Arial Black" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <TitledPane collapsible="false" prefHeight="121.0" prefWidth="1141.0" text="Profile" textFill="#f8f5f5">
+                     <content>
+                        <VBox prefHeight="200.0" prefWidth="100.0" styleClass="vbox-panel">
+                           <children>
+                              <VBox prefHeight="75.0" prefWidth="807.0">
+                                 <children>
+                                    <HBox prefHeight="25.0" prefWidth="816.0" spacing="5.0">
+                                       <children>
+                                          <Label text="Name" textFill="#eeecec" />
+                                          <TextField fx:id="txtFullname" prefHeight="25.0" prefWidth="426.0" />
+                                       </children>
+                                    </HBox>
+                                    <HBox prefHeight="27.0" prefWidth="1076.0" spacing="5.0">
+                                       <children>
+                                          <Label text="Date of Birthdate" textFill="#eeecec" />
+                                          <TextField fx:id="txtDOB" />
+                                          <Label text="Gender" textFill="#eeecec" />
+                                          <TextField fx:id="txtGender" prefHeight="25.0" prefWidth="117.0" />
+                                          <Label text="Civil Status" textFill="#eeecec" />
+                                          <TextField fx:id="txtCivilStatus" />
+                                       </children>
+                                    </HBox>
+                                    <HBox prefHeight="25.0" prefWidth="794.0" spacing="5.0">
+                                       <children>
+                                          <Label text="Address" textFill="#eeecec" />
+                                          <TextField fx:id="txtAddress" prefHeight="25.0" prefWidth="611.0" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                     </content>
+                  </TitledPane>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <TitledPane collapsible="false" prefHeight="82.0" prefWidth="1141.0" text="Strand Details" textFill="#e8e3e3">
+                     <content>
+                        <VBox prefHeight="200.0" prefWidth="100.0" styleClass="vbox-panel">
+                           <children>
+                              <HBox prefHeight="25.0" prefWidth="739.0" spacing="5.0">
+                                 <children>
+                                    <Label text="SY" textFill="#fcfcfc" />
+                                    <TextField fx:id="txtSY" editable="false" prefHeight="25.0" prefWidth="120.0" />
+                                    <Label text="Sem" textFill="#fcfcfc" />
+                                    <TextField fx:id="txtSem" editable="false" prefHeight="25.0" prefWidth="67.0" />
+                                    <Label text="Gradelevel" textFill="#fcfcfc" />
+                                    <TextField fx:id="txtGradelevel" prefHeight="25.0" prefWidth="63.0" />
+                                    <Label text="Strand" textFill="#fcfcfc" />
+                                    <ComboBox fx:id="cbStrand" prefHeight="25.0" prefWidth="117.0" />
+                                    <Label text="Strandgroup" textFill="#fcfcfc" />
+                                    <TextField fx:id="txtStrandgroup" prefHeight="25.0" prefWidth="92.0" />
+                                    <CheckBox fx:id="checkTransferee" layoutX="714.0" layoutY="10.0" mnemonicParsing="false" text="transferee" textFill="#fcfcfc" />
+                                    <CheckBox fx:id="checkAssess" mnemonicParsing="false" text="finance assessment" textFill="#fcfcfc" />
+                                    <Button fx:id="btnSaveStrand" mnemonicParsing="false" onAction="#actionSaveStudentStrandAndStrandgroup" text="Save Student Strandgroup" />
+                                    <Button mnemonicParsing="false" onAction="#actionPrintAssessment" text="Print" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </content></TitledPane>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </top>
+   <center>
+      <Pane prefHeight="362.0" prefWidth="1140.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="46.0" prefWidth="1140.0" styleClass="control-background">
+               <children>
+                  <HBox prefHeight="40.0" prefWidth="1078.0" spacing="5.0">
+                     <children>
+                        <Label text="NOTE:" textFill="#f5f0f0" />
+                        <Label fx:id="lblNote" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="38.0" prefWidth="1078.0">
+                     <children>
+                        <Button fx:id="btnAddSubject" mnemonicParsing="false" onAction="#actionAddSchedule" text="Add Subject(s)" />
+                        <Button fx:id="btnRefreshList" mnemonicParsing="false" onAction="#actionRefreshList" text="Refresh List">
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <HBox layoutY="47.0" prefHeight="440.0" prefWidth="1140.0" styleClass="control-background">
+               <children>
+                  <TableView fx:id="tblSubject" onSort="#actionSaveSubjects" prefHeight="440.0" prefWidth="1145.0" styleClass="table">
+                    <columns>
+                      <TableColumn fx:id="colNo" prefWidth="45.0" text="#" />
+                      <TableColumn fx:id="colCode" prefWidth="105.0" text="Code" />
+                        <TableColumn fx:id="colDesc" prefWidth="298.0" text="Description" />
+                        <TableColumn fx:id="colUnit" minWidth="0.0" prefWidth="45.0" text="Unit" />
+                        <TableColumn fx:id="colSection" prefWidth="56.0" text="Section" />
+                        <TableColumn fx:id="colGradelevel" prefWidth="74.0" text="Gradelevel" />
+                        <TableColumn fx:id="colRoomDayTime" prefWidth="208.0" text="Room &amp; Daytime" />
+                    </columns>
+                  </TableView>
+               </children>
+            </HBox>
+         </children>
+      </Pane>
+   </center>
+   <bottom>
+      <HBox prefHeight="38.0" prefWidth="1140.0" spacing="5.0" styleClass="control-background" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnSaveSubjects" mnemonicParsing="false" onAction="#actionSaveSubjects" prefHeight="25.0" prefWidth="94.0" text="Enroll Student" />
+         </children>
+         <padding>
+            <Insets left="5.0" top="5.0" />
+         </padding>
+      </HBox>
+   </bottom>
+</BorderPane>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="642.0" prefWidth="1187.0" styleClass="control-background" stylesheets="@../style/generic-theme.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ApplicantListController">
+   <bottom>
+      <HBox prefHeight="35.0" prefWidth="1187.0" spacing="5.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnConfirmStudent" mnemonicParsing="false" onAction="#actionConfirmStudent" text="Confirm Student" />
+            <Button fx:id="btnPromoteStudent" mnemonicParsing="false" onAction="#actionPromoteStudent" text="Promote Confirmed Student" />
+         </children>
+         <padding>
+            <Insets left="5.0" top="5.0" />
+         </padding>
+      </HBox>
+   </bottom>
+   <center>
+      <StackPane prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <TableView fx:id="tblApplicant" prefHeight="309.0" prefWidth="600.0" styleClass="table" VBox.vgrow="ALWAYS">
+                    <columns>
+                      <TableColumn fx:id="colNo" prefWidth="28.0" text="#" />
+                      <TableColumn fx:id="colAppNo" prefWidth="54.0" text="AppNo" />
+                        <TableColumn fx:id="colStudID" prefWidth="75.0" text="IDNo" />
+                        <TableColumn fx:id="colStudLname" prefWidth="160.0" text="Lastname" />
+                        <TableColumn fx:id="colFname" prefWidth="147.0" text="Firstname" />
+                        <TableColumn fx:id="colMname" prefWidth="134.0" text="Middlename" />
+                    </columns>
+                  </TableView>
+               </children>
+            </VBox>
+         </children>
+      </StackPane>
+   </center>
+   <top>
+      <HBox prefHeight="100.0" prefWidth="200.0" styleClass="hbox-top-background" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <HBox prefHeight="76.0" prefWidth="1187.0" styleClass="hbox-header">
+                     <children>
+                        <Label text="Applicant List" textFill="#f2eded">
+                           <font>
+                              <Font name="Arial Black" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="32.0" prefWidth="1187.0" styleClass="control-background">
+                     <children>
+                        <TitledPane collapsible="false" prefHeight="30.0" prefWidth="1187.0" HBox.hgrow="ALWAYS">
+                           <content>
+                              <VBox prefHeight="45.0" prefWidth="1207.0" styleClass="vbox-panel">
+                                 <children>
+                                    <HBox prefHeight="30.0" prefWidth="578.0" spacing="5.0">
+                                       <children>
+                                          <Label text="IDNo/Student Name" textFill="#ebe5e5" />
+                                          <TextField fx:id="txtSearch" />
+                                          <Button fx:id="btnSearch" mnemonicParsing="false" onAction="#filterDataOnClick" text="Search" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </content>
+                        </TitledPane>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </top>
+</BorderPane>

@@ -1,0 +1,61 @@
+- important conditions
+	* enrolled student
+		0-not enrol, 1-enrolled, 2-kickout, 3-transfer out
+		
+	* tbl sh_stud_strand.ss_id
+		ss_id = sy+"-"+ sem +"-"+ studID
+		
+		
+	* tbl sh_c_class_stud
+		class_info_id + idnum
+		
+		
+	* tbl sh_class_info
+		curr_sy_id + curr_dtl_id + ctr
+		
+		
+* NOTE
+	grades of students is dependent on curriculum setup
+		
+* TODO
+- grades
+	- show grade submission status
+	
+- core values
+	- show submission status
+
+- attendance
+	- show submission status
+	
+- hdr curriculum entry
+    - one time creation no to batch insert (for safety of dependency of subjects in other sy)
+	
+- user rights
+	- buttons/functions to disable/enable
+	
+	
+- student ranking
+
+- course list management
+
+- instructor list management
+
+- sync studentledger in ar
+
+- create reprint subjects and assessment
+
+- sync assessment with ar
+
+- cancel enrollment
+
+* ENHANCE
+- embed assessment in batch sectioning (checkbox)
+
+
+
+
+
+
+
+	
+		

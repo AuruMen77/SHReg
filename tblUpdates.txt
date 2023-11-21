@@ -1,0 +1,52 @@
+UPDATE TABLES
+
+** table sh_studlist
+	add columns
+		status_in
+		status_out
+		
+		
+** table sh_stud_strand
+	add new value for column ss_isreg
+		1= through regis system, 2= through new system
+		
+	addjust column ss_id length to 	20
+	
+
+** table sa_ledger_header
+	add column assess_strand varchar(20)
+	
+** table sh_times
+	add column times_desc varchar(10)
+	
+** table sh_class_info
+	add column cla_t_startdesc varchar(10)
+	add column cla_t_enddesc varchar(10)
+	
+	
+CREATE TABLE(S)
+** sh_curr_hdr
+** sh_course_list
+** sh_curr_dtl
+** sh_curr_sy
+
+
+
+
+
+
+
+QUERIES FOR IMPORT
+** importing to sh_course_list from sh_course_sysem
+SELECT `id` crs_id,`crs_code`,`pre_crs_code`,`crs_title`,`crs_units` `crs_unit`,`with_lab`,`subj_type` crs_type, `ts` date_created,`ts`
+FROM`sh_course_sysem` 
+
+
+
+
+FILES TO DELETE (?)
+- frmStudentAssessment
+- frmStudentAssessmentG11
+- frmStudentProfile
+- 
+

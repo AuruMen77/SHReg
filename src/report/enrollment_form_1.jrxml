@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="500" whenNoDataType="AllSectionsNoDetail" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" isFloatColumnFooter="true" uuid="12d5753a-7427-4e1d-9ad6-3cfe299ecb8f">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="15"/>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="dtCharges" uuid="f7eb6c87-d3ae-4e89-9767-bfa21e1fc46c">
+		<queryString language="SQL">
+			<![CDATA[SELECT 
+fee.*,ss_sem,studlist.stud_idnum,CONCAT(stud_lname,', ',stud_fname,' ',stud_mi) AS stud_name
+FROM `sh_stud_strand` strand
+LEFT JOIN `sh_studlist` studlist ON strand.stud_idnum=studlist.stud_idnum
+LEFT JOIN `sh_fee` fee ON (strand.ss_sy=fee.term AND strand.strand_code=fee.strand_code AND strand.ss_yr_level=fee.gradelevel)]]>
+		</queryString>
+		<field name="code" class="java.lang.String">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<field name="fee" class="java.math.BigDecimal">
+			<fieldDescription><![CDATA[]]></fieldDescription>
+		</field>
+		<group name="code">
+			<groupExpression><![CDATA[$F{code}]]></groupExpression>
+		</group>
+		<group name="fee">
+			<groupExpression><![CDATA[$F{fee}]]></groupExpression>
+		</group>
+	</subDataset>
+	<parameter name="gradelevel" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="sy" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="sem" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="stud_id" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["C:\\Users\\AdZU Advanced Lab\\Desktop\\SHAssessment\\SHAssessment\\src\\shassessment\\reports\\"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="curr_date" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="stud_section" class="java.lang.String"/>
+	<parameter name="stud_status" class="java.lang.String"/>
+	<parameter name="stud_fullname" class="java.lang.String"/>
+	<parameter name="stud_strand" class="java.lang.String"/>
+	<parameter name="fee_desc_misc" class="java.lang.String"/>
+	<parameter name="fee_amount_misc" class="java.lang.String"/>
+	<parameter name="fee_desc_comp" class="java.lang.String"/>
+	<parameter name="fee_amount_comp" class="java.lang.String"/>
+	<parameter name="fee_desc_aca" class="java.lang.String"/>
+	<parameter name="fee_amount_aca" class="java.lang.String"/>
+	<parameter name="fee_tot" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="fee" class="java.lang.String"/>
+	<field name="itemname" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="81" splitType="Stretch">
+			<staticText>
+				<reportElement x="157" y="0" width="254" height="20" uuid="4f7ebc7b-92b2-442b-a3a4-e9e4ab77d36a"/>
+				<textElement textAlignment="Center">
+					<font fontName="Matura MT Script Capitals" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Ateneo De Zamboanga Univeristy]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="157" y="20" width="254" height="20" uuid="fc728321-a60c-48b7-9881-a8271082632f"/>
+				<textElement textAlignment="Center">
+					<font size="11" isBold="false"/>
+				</textElement>
+				<text><![CDATA[SENIOR HIGH SCHOOL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="157" y="40" width="254" height="19" uuid="1bd1454c-d904-417e-951f-1efadb9b4c50"/>
+				<textElement textAlignment="Center">
+					<font size="11" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Enrollment Form]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="157" y="61" width="254" height="19" uuid="f8ec4fb7-5e77-4421-b348-4308cbfff4a5"/>
+				<textElement textAlignment="Center">
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{sy}+ " - " + ( $P{sem}.equals( "1" ) ? "1st Sem" : "Summer" )]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="110" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="0" width="555" height="1" uuid="f6aa4c69-9e6e-411c-8dc0-e301126204e3"/>
+				<graphicElement>
+					<pen lineWidth="1.0" lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="0" y="31" width="89" height="14" uuid="d282739f-3c77-4b31-8574-d938649863a7"/>
+				<textElement textAlignment="Justified">
+					<font size="11" isBold="false"/>
+				</textElement>
+				<text><![CDATA[ID No:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="50" width="89" height="14" uuid="7bf65d96-d1a4-40b4-a706-402388fcbf54"/>
+				<textElement textAlignment="Justified">
+					<font size="11" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Name:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="68" width="89" height="14" uuid="69f0f9e2-512f-4dd5-bd86-d9c9f25c6c82"/>
+				<textElement textAlignment="Justified">
+					<font size="11" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Strand:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="425" y="33" width="44" height="14" uuid="48fee8c4-8833-4b53-a002-84aa022f44aa"/>
+				<textElement textAlignment="Justified">
+					<font size="11" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Grade:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="425" y="53" width="44" height="14" uuid="5997c200-6434-46d4-b56b-65b92d8041e8"/>
+				<textElement textAlignment="Justified">
+					<font size="11" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Status:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="425" y="73" width="44" height="14" uuid="e68c6ee8-0fea-4f15-b009-6005f079ca23"/>
+				<textElement textAlignment="Justified">
+					<font size="11" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Section]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="473" y="74" width="83" height="14" uuid="1f6a2b57-3ce8-4d7b-b7e0-83bf37227f23"/>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{stud_section}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="407" y="2" width="38" height="16" uuid="50a25be1-ea47-4680-acaf-61fa78d5e5b4"/>
+				<textElement textAlignment="Right">
+					<font size="11" isBold="false"/>
+				</textElement>
+				<text><![CDATA[DATE:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="447" y="3" width="104" height="16" uuid="eefe32a3-1aed-4f61-bde0-fb65962a1f05"/>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{curr_date}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="89" y="31" width="254" height="14" uuid="b1e72e5b-bf26-484b-8a12-dd9312e362cc"/>
+				<textElement textAlignment="Left">
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{stud_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="89" y="51" width="254" height="14" uuid="e7ce9793-e7a4-4583-ba14-e4c299549607"/>
+				<textElement textAlignment="Left">
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{stud_fullname}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="89" y="69" width="254" height="14" uuid="99895772-4e48-4d38-ab94-cd3690a070ff"/>
+				<textElement textAlignment="Left">
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{stud_strand}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="472" y="33" width="83" height="14" uuid="938e76aa-a451-4c16-8662-ee4dde85b36f"/>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{gradelevel}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="471" y="53" width="83" height="14" uuid="6abd1869-18ac-4b3e-90ab-ce60f6a27ef7"/>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{stud_status}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="3" y="88" width="320" height="14" uuid="2f2d8293-1aaa-4fee-a4d7-f690254965b4"/>
+				<textElement textAlignment="Justified">
+					<font size="11" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Please check your subject schedules in portal (my.adzu.edu.ph).]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="147" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="1" width="115" height="14" uuid="556a4a09-7dd8-4889-8933-3baa5633c554"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Justified">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Amount]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="180" y="1" width="66" height="14" uuid="0bc2276e-4237-4103-8c97-13a2c1a0821f"/>
+				<textElement textAlignment="Justified">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Description]]></text>
+			</staticText>
+			<line>
+				<reportElement x="-1" y="0" width="555" height="1" uuid="f426d940-8a57-4202-bc83-a094e342e038"/>
+				<graphicElement>
+					<pen lineWidth="1.0" lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="0" y="18" width="555" height="1" uuid="9a1080f0-8ffd-4502-a5d7-ec68afd1417b"/>
+				<graphicElement>
+					<pen lineWidth="1.0" lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+			<textField>
+				<reportElement x="181" y="26" width="227" height="16" uuid="95e55f62-a478-447b-883d-27644fdd8d5f"/>
+				<textElement>
+					<font size="11" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{fee_desc_misc}]]></textFieldExpression>
+			</textField>
+			<textField pattern="¤ #,##0.00">
+				<reportElement x="29" y="26" width="87" height="16" uuid="162ff95d-a9a9-4c60-9ed6-eefe98a9a29c"/>
+				<box leftPadding="2"/>
+				<textElement>
+					<font size="11" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{fee_amount_misc}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="181" y="42" width="227" height="16" uuid="3c6b4040-6549-4557-b368-20a3605087d7"/>
+				<textElement>
+					<font size="11" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{fee_desc_comp}]]></textFieldExpression>
+			</textField>
+			<textField pattern="¤ #,##0.00">
+				<reportElement x="29" y="42" width="87" height="16" uuid="798a407a-8de6-4819-8b85-7abd78911b8f"/>
+				<box leftPadding="2"/>
+				<textElement>
+					<font size="11" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{fee_amount_comp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="182" y="58" width="227" height="16" uuid="fcbd5f84-de3d-472f-ab62-0c34a4090b02"/>
+				<textElement>
+					<font size="11" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{fee_desc_aca}]]></textFieldExpression>
+			</textField>
+			<textField pattern="¤ #,##0.00">
+				<reportElement x="29" y="58" width="88" height="16" uuid="8a39e661-48d1-445f-8533-3b7e1a97c716"/>
+				<box leftPadding="2"/>
+				<textElement>
+					<font size="11" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{fee_amount_aca}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="2" y="110" width="115" height="20" uuid="986e6439-5f82-4f8c-8907-e050cb1a2738"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Justified">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total amount paid]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="182" y="110" width="115" height="20" uuid="92e96810-84db-4ebf-bff7-bbbbc89026b5"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Justified">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Cashier]]></text>
+			</staticText>
+			<textField pattern="¤ #,##0.00">
+				<reportElement x="29" y="76" width="86" height="16" uuid="61b823c3-e73d-4f41-a5d6-decd79c14494"/>
+				<box leftPadding="2"/>
+				<textFieldExpression><![CDATA[$P{fee_tot}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="3" y="26" width="26" height="14" uuid="9c9befe3-360a-417c-a78b-77e2dc3f4e54"/>
+				<textElement textAlignment="Justified">
+					<font size="11" isBold="false"/>
+				</textElement>
+				<text><![CDATA[PHP]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+</jasperReport>

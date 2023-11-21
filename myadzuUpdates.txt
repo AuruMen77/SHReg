@@ -1,0 +1,22 @@
+TO UPDATE myadzu pages
+- enrollment_enrolled.php
+	lines 90-99 still query seniorhighdb.sh_assessaccount
+	need to query to sa_ledger_header and dtl table
+	
+	
+	
+	
+TABLES currently use in myadzu portal
+- sh_stud_strand
+- sh_studlist
+- sh_applicant
+- sh_class_info
+- sh_class_information
+- strands
+- sh_days
+- sh_tmpsubject G11 sched
+- sh_tmpaccount G11 acct
+- sh_course_sysem G12 sched
+- sh_assessaccount  G12 acct
+
+

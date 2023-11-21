@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.InstructorListController">
+   <top>
+      <TitledPane prefHeight="68.0" prefWidth="600.0" text="Filter Details" BorderPane.alignment="CENTER">
+         <content>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <HBox prefHeight="38.0" prefWidth="297.0" spacing="5.0">
+                     <children>
+                        <Label text="School Year" />
+                        <ComboBox fx:id="cbSY" prefWidth="150.0" />
+                        <Label layoutX="10.0" layoutY="10.0" text="Sem">
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                        </Label>
+                        <ComboBox fx:id="cbSem" prefWidth="75.0" />
+                        <Label layoutX="238.0" layoutY="10.0" text="Year Level">
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                        </Label>
+                        <ComboBox fx:id="cbGradeLevel" layoutX="266.0" layoutY="10.0" prefWidth="75.0" />
+                        <Button fx:id="btnSearch" mnemonicParsing="false" onAction="#actionSearch" text="Search">
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin></Button>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="40.0" prefWidth="598.0" spacing="5.0" />
+               </children>
+            </VBox>
+         </content>
+      </TitledPane>
+   </top>
+   <center>
+      <StackPane prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <TableView fx:id="tblTeacher" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                    <columns>
+                      <TableColumn fx:id="colNo" prefWidth="75.0" text="#" />
+                      <TableColumn fx:id="colTeacherID" prefWidth="75.0" text="ID" />
+                        <TableColumn fx:id="colTeacherUsername" prefWidth="160.0" text="Username" />
+                        <TableColumn fx:id="colTeacherFullname" prefWidth="288.0" text="Name" />
+                    </columns>
+                  </TableView>
+               </children>
+            </VBox>
+         </children>
+      </StackPane>
+   </center>
+   <bottom>
+      <HBox prefHeight="32.0" prefWidth="600.0" spacing="5.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnNew" mnemonicParsing="false" onAction="#actionAddInstructor" text="New" />
+            <Button fx:id="btnEdit" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#actionEditInstructor" text="Edit" />
+            <Button fx:id="btnDelete" layoutX="55.0" layoutY="10.0" mnemonicParsing="false" text="Delete" />
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>

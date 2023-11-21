@@ -1,0 +1,24 @@
+* THINGS TO DO *
+- enrolled student list (new condition)
+	- enrol_status : 0-not enrol, 1-enrolled, 2-kickout, 3-transfer out
+	- status_out : 0=Active; 1=kickout; 2=transfer out
+	- status_in : 1=Enrolled/Promoted; 2=Transfer-in
+
+
+- promote student
+	- insert in sh_stud_strand && sh_studlist
+		- shstud_strand.ss_id = sy+"-"+ sem +"-"+ studID
+
+- eclass sync
+- sync grades
+- populate core values
+- sync core values
+- populate grades for submission
+- profile
+- app_no and student_id validation
+- 
+
+
+
+ENHANCE/DEBUG
+- relative path issue in jasperreport printing

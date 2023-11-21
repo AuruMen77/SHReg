@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <!---
+        <property name="hibernate.connection.url">jdbc:mysql://test.host.adzu.edu.ph:3306/seniorhighdb?zeroDateTimeBehavior=convertToNull</property>
+        <property name="hibernate.connection.username">test</property>
+        <property name="hibernate.connection.password">test12345678</property>
+        -->  
+        
+       
+    
+           
+       <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/seniorhighdb?zeroDateTimeBehavior=convertToNull</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password"></property>
+    
+        <property name="hibernate.current_session_context_class">thread</property>
+        <property name="hibernate.connection.pool_size">10</property>
+        <property name="autoCommitOnClose"> true</property>
+   
+        <property name="idleConnectionTestPeriod">15</property>
+        <property name="maxIdleTime"> 15</property>
+   
+        <property name="hibernate.c3p0.min_size">10</property>
+    
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.format_sql">true</property>
+    
+        <!---
+        <property name="show_sql">true</property>
+        <property name="format_sql">true</property>
+        <property name="use_sql_comments">true</property>
+        -->
+  
+        <!--<property name="hibernate.hbm2ddl.auto">update</property>-->
+    
+        <mapping class="entity.ShCAttendance"/>
+        <mapping class="entity.ShStudStrand"/>
+        <mapping class="entity.ShFee2"/>
+        <mapping class="entity.ClearanceSysem"/>
+        <mapping class="entity.ShAssessaccount"/>
+        <mapping class="entity.ShCCorevalues"/>
+        <mapping class="entity.ShCurriculumSem"/>
+        <mapping class="entity.CoreValues"/>
+        <mapping class="entity.Registrar"/>
+        <mapping class="entity.ShApplicant"/>
+        <mapping class="entity.ShCClassStud"/>
+        <mapping class="entity.ShDates"/>
+        <mapping class="entity.ShRankingHdr"/>
+        <mapping class="entity.ShStrandsections"/>
+        <mapping class="entity.ShTmpaccount"/>
+        <mapping class="entity.EthnicAffiliation"/>
+        <mapping class="entity.EducAttainmentSibling"/>
+        <mapping class="entity.CustomApplicantAptitude"/>
+        <mapping class="entity.ShDays"/>
+        <mapping class="entity.StrandSection"/>
+        <mapping class="entity.Strands"/>
+        <mapping class="entity.ShClassInfo"/>
+        <mapping class="entity.SaLedgerHeader"/>
+        <mapping class="entity.ShSections"/>
+        <mapping class="entity.ShStudlist"/>
+        <mapping class="entity.ShTmpsubject"/>
+        <mapping class="entity.ShCurriculumHdr"/>
+        <mapping class="entity.ShsCourseType"/>
+        <mapping class="entity.SchoolAttended"/>
+        <mapping class="entity.ShCurriculumDtl"/>
+        <mapping class="entity.ShWebTmpaccount"/>
+        <mapping class="entity.AppResults"/>
+        <mapping class="entity.ShRankingDtl"/>
+        <mapping class="entity.ShCurrSy"/>
+        <mapping class="entity.ShCourseList"/>
+        <mapping class="entity.Year"/>
+        <mapping class="entity.Honors"/>
+        <mapping class="entity.ShTimes"/>
+        <mapping class="entity.ShCourseType"/>
+        <mapping class="entity.CoreValuesCategory"/>
+        <mapping class="entity.ShInstructor"/>
+        <mapping class="entity.ShQuarters"/>
+        <mapping class="entity.Schools"/>
+        <mapping class="entity.ShConfirmation"/>
+        <mapping class="entity.Children"/>
+        <mapping class="entity.SaLedger"/>
+        <mapping class="entity.ShFee"/>
+        <mapping class="entity.TblImport"/>
+        <mapping class="entity.ShCourseSysemTor"/>
+        <mapping class="entity.ShCurrDtl"/>
+        <mapping class="entity.ShSectionsTor"/>
+        <mapping class="entity.CustomApplicantEducProgram"/>
+        <mapping class="entity.Religions"/>
+        <mapping class="entity.ShCourseSysem"/>
+        <mapping class="entity.EducationalPrograms"/>
+        <mapping class="entity.MonthAttendance"/>
+        <mapping class="entity.ShCourseSysemTemp"/>
+        <mapping class="entity.ShUsers"/>
+        <mapping class="entity.StrandSectionTor"/>
+        <mapping class="entity.Tracks"/>
+        <mapping class="entity.ShCurrHdr"/>
+        <mapping class="entity.ShCClassStudent"/>
+        <mapping class="entity.ShSchooldays"/>
+        <mapping class="entity.ShCourse"/>
+        <mapping class="entity.ShCourseCurriculum"/>
+        <mapping class="entity.ShTerm"/>
+        <mapping class="entity.ClinicDates"/>
+        <mapping class="entity.ShTmplog"/>
+        <mapping class="entity.ShCClassStudBackup"/>
+        <mapping class="entity.Schoolmonth"/>
+        <mapping class="entity.ShRankingFinal"/>
+        <mapping class="entity.Livingcond"/>
+        <mapping class="entity.ShStudlistId"/>
+        <mapping class="entity.ShClassInformation"/>
+        <mapping class="entity.ShCAttendance"/>
+        <mapping class="entity.ShStudStrand"/>
+        <mapping class="entity.ShFee2"/>
+        <mapping class="entity.ShAssessaccount"/>
+        <mapping class="entity.ShCCorevalues"/>
+        <mapping class="entity.ShCurriculumSem"/>
+        <mapping class="entity.CoreValues"/>
+        <mapping class="entity.Settings"/>
+        <mapping class="entity.Registrar"/>
+        <mapping class="entity.ShApplicant"/>
+        <mapping class="entity.ShCClassStud"/>
+        <mapping class="entity.ShDates"/>
+        <mapping class="entity.ShRankingHdr"/>
+        <mapping class="entity.ShStrandsections"/>
+        <mapping class="entity.ShTmpaccount"/>
+        <mapping class="entity.EthnicAffiliation"/>
+        <mapping class="entity.ShTermReg"/>
+        <mapping class="entity.EducAttainmentSibling"/>
+        <mapping class="entity.CustomApplicantAptitude"/>
+        <mapping class="entity.ShDays"/>
+        <mapping class="entity.StrandSection"/>
+        <mapping class="entity.Strands"/>
+        <mapping class="entity.ShClassInfo"/>
+        <mapping class="entity.SaLedgerHeader"/>
+        <mapping class="entity.ShSections"/>
+        <mapping class="entity.ShStudlist"/>
+        <mapping class="entity.ShTmpsubject"/>
+        <mapping class="entity.ShCurriculumHdr"/>
+        <mapping class="entity.ShsCourseType"/>
+        <mapping class="entity.SchoolAttended"/>
+        <mapping class="entity.ShCurriculumDtl"/>
+        <mapping class="entity.ShWebTmpaccount"/>
+        <mapping class="entity.AppResults"/>
+        <mapping class="entity.ShRankingDtl"/>
+        <mapping class="entity.ShCurrSy"/>
+        <mapping class="entity.ShCourseList"/>
+        <mapping class="entity.Year"/>
+        <mapping class="entity.Honors"/>
+        <mapping class="entity.ShTimes"/>
+        <mapping class="entity.ShCourseType"/>
+        <mapping class="entity.CoreValuesCategory"/>
+        <mapping class="entity.ShInstructor"/>
+        <mapping class="entity.ShQuarters"/>
+        <mapping class="entity.Schools"/>
+        <mapping class="entity.ShConfirmation"/>
+        <mapping class="entity.Children"/>
+        <mapping class="entity.SaLedger"/>
+        <mapping class="entity.ShFee"/>
+        <mapping class="entity.TblImport"/>
+        <mapping class="entity.ShCourseSysemTor"/>
+        <mapping class="entity.ShCurrDtl"/>
+        <mapping class="entity.ShSectionsTor"/>
+        <mapping class="entity.CustomApplicantEducProgram"/>
+        <mapping class="entity.Religions"/>
+        <mapping class="entity.ShCourseSysem"/>
+        <mapping class="entity.EducationalPrograms"/>
+        <mapping class="entity.MonthAttendance"/>
+        <mapping class="entity.ShCourseSysemTemp"/>
+        <mapping class="entity.ShUsers"/>
+        <mapping class="entity.StrandSectionTor"/>
+        <mapping class="entity.Tracks"/>
+        <mapping class="entity.ShCurrHdr"/>
+        <mapping class="entity.ShCClassStudent"/>
+        <mapping class="entity.ShSchooldays"/>
+        <mapping class="entity.ShCourse"/>
+        <mapping class="entity.ShCourseCurriculum"/>
+        <mapping class="entity.ShTerm"/>
+        <mapping class="entity.ClinicDates"/>
+        <mapping class="entity.ShTmplog"/>
+        <mapping class="entity.ShCClassStudBackup"/>
+        <mapping class="entity.Schoolmonth"/>
+        <mapping class="entity.ShRankingFinal"/>
+        <mapping class="entity.Livingcond"/>
+        <mapping class="entity.ShStudlistId"/>
+        <mapping class="entity.ShClassInformation"/>
+        <mapping class="entity.ClearanceOfficeSysem"/>
+    </session-factory>
+</hibernate-configuration>

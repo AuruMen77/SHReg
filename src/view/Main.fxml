@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="817.0" prefWidth="1052.0" styleClass="control-background" stylesheets="@../style/generic-theme.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController">
+   <top>
+      <MenuBar prefHeight="29.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+        <menus>
+          <Menu fx:id="menuFile" mnemonicParsing="false" text="File" visible="false">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu fx:id="menuApplicant" mnemonicParsing="false" text="Applicant">
+            <items>
+              <MenuItem fx:id="menuItemApplicantList" mnemonicParsing="false" onAction="#actionApplicantList" text="Applicant List" />
+            </items>
+          </Menu>
+          <Menu fx:id="menuStudent" mnemonicParsing="false" text="Student">
+            <items>
+              <MenuItem fx:id="menuItemStudentListWithSubjects" mnemonicParsing="false" onAction="#actionStudentList" text="Student List Enrolled in Subjects" />
+            </items>
+          </Menu>
+            <Menu fx:id="menuCurriculum" mnemonicParsing="false" text="Curriculum">
+              <items>
+                <MenuItem fx:id="menuItemCurriculumList" mnemonicParsing="false" onAction="#actionCurriculumList" text="Curriculum List" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Schedule">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#actionScheduleList" text="Schedule List" />
+                  <MenuItem mnemonicParsing="false" onAction="#actionStudentAssignScheduleBatch" text="Student Schedule Assignment Batch" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Grades">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#actionGradesBySection" text="Grades by Section" />
+                <MenuItem mnemonicParsing="false" onAction="#actionSetGradeView" text="Grade Viewing" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Classes">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#actionClassList" text="Class List" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Enrollment">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#actionBatchPromotion" text="Batch Promotion" />
+                  <MenuItem mnemonicParsing="false" onAction="#actionIndividualPromotion" text="Individual Promotion" />
+                  <MenuItem mnemonicParsing="false" onAction="#actionBatchEnrollment" text="Batch Enrollment" />
+                  <MenuItem mnemonicParsing="false" onAction="#actionIndividualEnrollment" text="Individual Enrollment" />
+                  <MenuItem mnemonicParsing="false" text="Enrollment History" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Upload">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#actionUpload" text="Upload Students" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Setting">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Manage Term" />
+                  <MenuItem mnemonicParsing="false" onAction="#actionSectionList" text="Section List" />
+                  <MenuItem mnemonicParsing="false" onAction="#actionDayList" text="Day List" />
+                  <MenuItem mnemonicParsing="false" onAction="#actionCourseList" text="Course List" />
+                <MenuItem mnemonicParsing="false" onAction="#actionInstructorList" text="Instructor List" />
+               </items>
+            </Menu>
+              <Menu mnemonicParsing="false" text="Controls">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Student Clearance"  onAction="#actionSetClearance"/>
+                  <MenuItem mnemonicParsing="false" text="Online Grade Submission" onAction="#actionSetGradeSubmission"/>
+               </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <StackPane prefHeight="150.0" prefWidth="200.0" stylesheets="@../style/generic-theme.css" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0" StackPane.alignment="TOP_CENTER">
+               <children>
+                  <Label alignment="TOP_CENTER" contentDisplay="TOP" prefHeight="96.0" prefWidth="1063.0" text="SHS Registration System v2.18" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Black" size="48.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <ImageView fitHeight="307.0" fitWidth="436.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/adzu_logo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </StackPane>
+   </center>
+</BorderPane>

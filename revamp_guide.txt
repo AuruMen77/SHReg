@@ -1,0 +1,65 @@
+#1
+   merge sh_c_class_stud and sh_c_class_student
+   add cs_yr_level (int 2) in sh_c_class_stud
+   records from sh_c_class_student should be 34770
+   
+   queries:
+	SELECT `cclass_id`,`cs_idnum`,`cs_crs_code`,`cs_section`,`cs_sem`,`cs_sy`,12 AS cs_yr_level,`cs_mid_grade`,`cs_sec_qtr`,`cs_fin_exam`,`cs_fin_grade`,`cs_enrolled`,`cs_remarks`,`tobedeleted`,`ts`,`lastupdated`
+FROM `sh_c_class_student`;
+
+
+	UPDATE sh_c_class_student SET cclass_id =(48802+cclass_id)
+	
+	
+#2
+	
+	merge sh_class_info and sh_class_information
+	f_curr_sy (int 10)
+	f_curr_dtl (int 20)
+	records from sh_class_information should be 1515
+	
+	
+	query:
+	SELECT `classid`,`cla_crs_code`,`cla_section`,`cla_stud_allowed`,`cla_sem`,`cla_stud_enrolled`,`cla_stud_res`,`cla_day`,`cla_t_start`,`cla_startcode`,`cla_t_end`,`cla_endcode`,`cla_room`,`cla_tea_idnum`,`cla_sy`,`cla_common`,`cla_remarks`,`tobedeleted`,`ts`,`multiple_section`,`subj_dep`,`strandcode`,`strandgroup`,`cla_yr_level`,`with_cluster`,`date_clusterinput`,`cv_status1`,`cv_status2`,`att_status1`,`att_status2`
+FROM `sh_class_information` AS sh_class_info
+WHERE cla_yr_level=12
+
+
+#3 
+	add tables 
+		sh_course_list
+		sh_curr_hdr
+		sh_curr_dtl
+		sh_curr_sy
+		
+		
+#4
+	yrlevel (int 2) in table sa_ledger_header
+	
+	
+#5
+	cla_start_desc (varchar 10) && cla_t_enddesc (varchar 10) in table sh_class_info
+
+#6
+	timedesc (varchar 10) in table sh_times
+	
+	then run script
+	UPDATE `sh_times` SET `timesdesc` = CONCAT(`times`,' AM') WHERE  timecode >= 700 AND timecode <= 1255
+	
+	UPDATE `sh_times` SET `timesdesc` = CONCAT(`times`,' PM') WHERE  timecode >= 1300 AND timecode <= 1855
+	
+#7 
+	cs_strandgroup (char 2) in table sh_c_class_stud
+	
+	
+#8
+	for timestamp (user insertable=false in mapping)
+	
+#9 
+	"days_id" (int 10) in table sh_days
+	
+	
+	
+   
+   
+   

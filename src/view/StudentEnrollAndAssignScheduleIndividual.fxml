@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="674.0" prefWidth="1180.0" styleClass="control-background" stylesheets="@../style/generic-theme.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.StudentEnrollAndAssignScheduleIndividualController">
+   <center>
+      <TabPane prefHeight="200.0" prefWidth="200.0" styleClass="control-background" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+        <tabs>
+          <Tab text="Applicant List">
+               <content>
+                  <VBox prefHeight="570.0" prefWidth="1180.0" spacing="5.0">
+                     <children>
+                        <HBox prefHeight="0.0" prefWidth="1180.0" />
+                        <HBox prefHeight="57.0" prefWidth="1180.0" spacing="5.0">
+                           <children>
+                              <Label text="SY" textFill="#f2efef" />
+                              <ComboBox fx:id="cbSY" prefHeight="25.0" prefWidth="104.0" />
+                              <Label text="Confirm Strand" textFill="#f2efef" />
+                              <ComboBox fx:id="cbStrand" prefHeight="25.0" prefWidth="104.0" />
+                              <Label text="Student ID/Name" textFill="#f2efef" />
+                              <TextField fx:id="txtSearch" />
+                              <Button fx:id="btnSearch" mnemonicParsing="false" onAction="#actionSearchApplicant" prefHeight="25.0" prefWidth="61.0" text="Seach" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="545.0" prefWidth="1180.0">
+                           <children>
+                              <StackPane prefHeight="536.0" prefWidth="1181.0">
+                                 <children>
+                                    <VBox prefHeight="532.0" prefWidth="1180.0">
+                                       <children>
+                                          <TableView fx:id="tblApplicant" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="556.0" prefWidth="1180.0" styleClass="table" VBox.vgrow="ALWAYS">
+                                            <columns>
+                                                <TableColumn fx:id="colNo" prefWidth="63.0" text="#" />
+                                              <TableColumn fx:id="colStudentID" prefWidth="102.0" text="ID" />
+                                              <TableColumn fx:id="colStudname" prefWidth="226.0" text="Student" />
+                                                <TableColumn fx:id="colStrand" minWidth="0.0" prefWidth="138.0" text="Strand" />
+                                            </columns>
+                                          </TableView>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </StackPane>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="35.0" prefWidth="1180.0">
+                           <children>
+                              <Button fx:id="btnEnroll" mnemonicParsing="false" onAction="#actionEnrollStudent" text="Enroll" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </content>
+            </Tab>
+          <Tab text="Enrolled List for the current Sy-sem">
+               <content>
+                  <VBox prefHeight="556.0" prefWidth="1180.0" spacing="5.0">
+                     <children>
+                        <HBox prefHeight="21.0" prefWidth="1180.0" />
+                        <HBox prefHeight="38.0" prefWidth="1180.0" spacing="5.0">
+                           <children>
+                              <Label text="SY" textFill="#fcfcfc" />
+                              <TextField fx:id="txtSY" editable="false" prefHeight="25.0" prefWidth="110.0" />
+                              <Label text="Sem" textFill="#fcfcfc" />
+                              <TextField fx:id="txtSem" editable="false" prefHeight="25.0" prefWidth="53.0" />
+                              <Label text="Gradelevel" textFill="#fcfcfc" />
+                              <ComboBox fx:id="cbGradelevel" prefHeight="25.0" prefWidth="56.0" />
+                              <Label text="Strand" textFill="#fcfcfc" />
+                              <ComboBox fx:id="cbStrand2" prefHeight="25.0" prefWidth="103.0" />
+                              <Label text="Section" textFill="#fcfcfc" />
+                              <ComboBox fx:id="cbSection" prefWidth="150.0" />
+                              <Label text="Student ID/Name" textFill="#fcfcfc" />
+                              <TextField fx:id="txtSearch2" prefHeight="25.0" prefWidth="177.0" />
+                              <Button fx:id="btnSearch2" mnemonicParsing="false" onAction="#actionSearchEnrolledStudent" prefHeight="25.0" prefWidth="61.0" text="Seach" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="494.0" prefWidth="1180.0">
+                           <children>
+                              <Pane prefHeight="497.0" prefWidth="1180.0">
+                                 <children>
+                                    <VBox prefHeight="497.0" prefWidth="1180.0">
+                                       <children>
+                                          <TableView fx:id="tblStudent" prefHeight="579.0" prefWidth="1180.0" styleClass="table">
+                                             <columns>
+                                                <TableColumn fx:id="colNo2" prefWidth="63.0" text="#" />
+                                                <TableColumn fx:id="colStudentID2" prefWidth="102.0" text="ID" />
+                                                <TableColumn fx:id="colStudname2" prefWidth="226.0" text="Student" />
+                                                <TableColumn fx:id="colSY2" prefWidth="160.0" text="SY" />
+                                                <TableColumn fx:id="colSem2" prefWidth="87.0" text="Sem" />
+                                                <TableColumn fx:id="colGradelevel2" prefWidth="98.0" text="Gradelevel" />
+                                                <TableColumn fx:id="colStrand2" minWidth="0.0" prefWidth="138.0" text="Strand" />
+                                                <TableColumn fx:id="colSection2" minWidth="0.0" prefWidth="166.0" text="Section" />
+                                                <TableColumn fx:id="colValidation2" minWidth="0.0" prefWidth="166.0" text="Validation" />
+                                             </columns>
+                                          </TableView>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="14.0" prefWidth="1180.0">
+                           <children>
+                              <Button mnemonicParsing="false" text="View Subjects" />
+                           </children>
+                           <padding>
+                              <Insets left="5.0" top="5.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </center>
+   <top>
+      <HBox prefHeight="56.0" prefWidth="1180.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="200.0" styleClass="hbox-header" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Label text="Student Enroll And Assign Schedule" textFill="#fcf9f9">
+                           <font>
+                              <Font name="Arial Black" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </top>
+</BorderPane>

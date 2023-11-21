@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="279.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <VBox prefHeight="245.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <TitledPane prefHeight="114.0" prefWidth="600.0" text="Student Details">
+                     <content>
+                        <VBox prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <HBox prefHeight="100.0" prefWidth="200.0" spacing="5.0">
+                                 <children>
+                                    <Label text="Student ID" />
+                                    <TextField fx:id="txtStudentID" />
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="200.0" spacing="5.0">
+                                 <children>
+                                    <Label prefHeight="17.0" prefWidth="56.0" text="Name" />
+                                    <TextField fx:id="txtStudentName" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </content>
+                  </TitledPane>
+               </children>
+            </HBox>
+            <HBox prefHeight="158.0" prefWidth="600.0">
+               <children>
+                  <TitledPane prefHeight="149.0" prefWidth="600.0" text="Assignment/Promotion Details">
+                     <content>
+                        <VBox prefHeight="116.0" prefWidth="598.0">
+                           <children>
+                              <HBox prefHeight="29.0" prefWidth="578.0" spacing="5.0">
+                                 <children>
+                                    <Label prefHeight="17.0" prefWidth="55.0" text="SY" />
+                                    <ComboBox fx:id="cbSY" prefHeight="25.0" prefWidth="108.0" />
+                                    <Label prefHeight="17.0" prefWidth="74.0" text="Sem" />
+                                    <ComboBox fx:id="cbSem" prefHeight="25.0" prefWidth="100.0" />
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="29.0" prefWidth="578.0" spacing="5.0">
+                                 <children>
+                                    <Label text="Gradelevel" />
+                                    <ComboBox fx:id="cbGradelevel" prefHeight="25.0" prefWidth="108.0" />
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="37.0" prefWidth="578.0" spacing="5.0">
+                                 <children>
+                                    <Label prefHeight="17.0" prefWidth="55.0" text="Strand" />
+                                    <ComboBox fx:id="cbStrand" prefHeight="25.0" prefWidth="108.0" />
+                                    <Label prefHeight="17.0" prefWidth="74.0" text="Strandgroup" />
+                                    <TextField fx:id="txtStrandgroup" prefHeight="25.0" prefWidth="102.0" />
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <CheckBox fx:id="chkTransferee" mnemonicParsing="false" text="Is Transferee" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </content>
+                  </TitledPane>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </top>
+   <bottom>
+      <HBox prefHeight="33.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnAssign" mnemonicParsing="false" onAction="#actionSaveStudentPromotion" text="Assign Student to Strand" />
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>

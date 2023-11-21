@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="587.0" prefWidth="1087.0" styleClass="control-background" stylesheets="@../style/generic-theme.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <StackPane prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <TableView fx:id="tblSubject" prefHeight="200.0" prefWidth="200.0" styleClass="table" VBox.vgrow="ALWAYS">
+                    <columns>
+                      <TableColumn fx:id="colNo" prefWidth="43.0" />
+                      <TableColumn fx:id="colCurrDtlID" prefWidth="67.0" text="ID" />
+                        <TableColumn fx:id="colSY" prefWidth="79.0" text="SY" />
+                        <TableColumn fx:id="colSem" prefWidth="55.0" text="Sem" />
+                        <TableColumn fx:id="colGradelevel" prefWidth="68.0" text="Gradelevel" />
+                        <TableColumn fx:id="colSubjCode" prefWidth="97.0" text="Code" />
+                        <TableColumn fx:id="colSubjsection" prefWidth="95.0" text="Subject Section" />
+                        <TableColumn fx:id="colStrand" prefWidth="99.0" text="Strand" />
+                        <TableColumn fx:id="colSection" prefWidth="111.0" text="Section" />
+                        <TableColumn fx:id="colRoomDayTime" prefWidth="312.0" text="Room &amp; Daytime" />
+                    </columns>
+                  </TableView>
+               </children>
+            </VBox>
+         </children>
+      </StackPane>
+   </center>
+   <bottom>
+      <HBox prefHeight="36.0" prefWidth="1087.0" spacing="5.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnSave" mnemonicParsing="false" onAction="#actionSaveSubjects" text="Save" />
+         </children>
+         <padding>
+            <Insets left="5.0" top="5.0" />
+         </padding>
+      </HBox>
+   </bottom>
+   <top>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="200.0" styleClass="hbox-header" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Label text="Add Subject" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Black" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <TitledPane collapsible="false" prefHeight="80.0" prefWidth="1087.0" styleClass="control-background">
+                           <content>
+                              <VBox prefHeight="51.0" prefWidth="1085.0" styleClass="vbox-panel">
+                                 <children>
+                                    <HBox prefHeight="36.0" prefWidth="1065.0" spacing="5.0" styleClass="control-background">
+                                       <children>
+                                          <Label text="SY" textFill="WHITE" />
+                                          <TextField fx:id="txtSY" prefHeight="25.0" prefWidth="72.0" />
+                                          <Label text="Sem" textFill="WHITE" />
+                                          <TextField fx:id="txtSem" layoutX="29.0" layoutY="10.0" prefHeight="25.0" prefWidth="72.0" />
+                                          <Label text="Strand" textFill="WHITE" />
+                                          <TextField fx:id="txtStrand" prefHeight="25.0" prefWidth="72.0" />
+                                          <Label text="Gradelevel" textFill="WHITE" />
+                                          <ComboBox fx:id="cbGradelevel" prefHeight="25.0" prefWidth="63.0" />
+                                          <Label text="Section" textFill="WHITE" />
+                                          <ComboBox fx:id="cbSection" prefHeight="25.0" prefWidth="151.0" />
+                                          <Button fx:id="btnSearch" mnemonicParsing="false" onAction="#actionSearch" text="Search" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </content>
+                        </TitledPane>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </top>
+</BorderPane>

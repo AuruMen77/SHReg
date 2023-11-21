@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="673.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <TitledPane prefHeight="158.0" prefWidth="600.0" text="Curriculum Subject List" BorderPane.alignment="CENTER">
+         <content>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <HBox prefHeight="37.0" prefWidth="297.0" spacing="5.0">
+                     <children>
+                        <Label prefHeight="17.0" prefWidth="64.0" text="Curriculum" />
+                        <TextField fx:id="txtCurriculumID" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="38.0" prefWidth="297.0" spacing="5.0">
+                     <children>
+                        <Label prefHeight="17.0" prefWidth="64.0" text="Gradelevel" />
+                        <ComboBox fx:id="cbGradelevel" prefWidth="150.0" />
+                        <Label prefHeight="17.0" prefWidth="64.0" text="Sem" />
+                        <ComboBox fx:id="cbSem" prefWidth="150.0" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="42.0" prefWidth="297.0">
+                     <children>
+                        <Label prefHeight="17.0" prefWidth="71.0" text="Course" />
+                        <ComboBox fx:id="cbCourseCode" onKeyPressed="#actionAutocompleteSubject" prefWidth="150.0" />
+                     </children>
+                  </HBox>
+                  <Button fx:id="btnAddToList" mnemonicParsing="false" onAction="#actionAddToList" text="Add to list" />
+               </children>
+            </VBox>
+         </content>
+      </TitledPane>
+   </top>
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="673.0">
+               <children>
+                  <TableView fx:id="tblSubject" prefHeight="200.0" prefWidth="200.0">
+                    <columns>
+                      <TableColumn fx:id="colNo" prefWidth="33.0" text="#" />
+                      <TableColumn fx:id="colID" prefWidth="51.0" text="ID" />
+                        <TableColumn fx:id="colCourseCode" prefWidth="105.0" text="Course Code" />
+                        <TableColumn fx:id="colDescription" prefWidth="352.0" text="Description" />
+                        <TableColumn fx:id="colGradelevel" prefWidth="76.0" text="Gradelevel" />
+                        <TableColumn fx:id="colSem" prefWidth="55.0" text="Sem" />
+                    </columns>
+                  </TableView>
+                  <Button fx:id="btnRemoveFromLIst" mnemonicParsing="false" onAction="#actionRemove" text="Remove from List" />
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+   </center>
+   <bottom>
+      <HBox prefHeight="39.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnSave" mnemonicParsing="false" onAction="#actionSave" text="Save" />
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>

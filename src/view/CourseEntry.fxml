@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="225.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <TitledPane prefHeight="179.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <content>
+            <VBox prefHeight="148.0" prefWidth="598.0">
+               <children>
+                  <HBox prefHeight="35.0" prefWidth="578.0" spacing="5.0">
+                     <children>
+                        <Label text="Subject Type" />
+                        <ComboBox fx:id="cbSubjType" prefWidth="150.0" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="35.0" prefWidth="578.0" spacing="5.0">
+                     <children>
+                        <Label text="Subject Code" />
+                        <TextField fx:id="txtSubjCode" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="35.0" prefWidth="578.0" spacing="5.0">
+                     <children>
+                        <Label text="Subject Description" />
+                        <TextField fx:id="txtSubjDesc" prefHeight="25.0" prefWidth="464.0" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="35.0" prefWidth="578.0" spacing="5.0">
+                     <children>
+                        <Label text="Subject Unit" />
+                        <TextField fx:id="txtSubjUnit" />
+                        <CheckBox fx:id="checkWithLab" mnemonicParsing="false" text="With Lab" />
+                        <CheckBox fx:id="checkNoGrade" mnemonicParsing="false" text="No Grade" />
+                        <CheckBox fx:id="checkClassBasis" mnemonicParsing="false" text="Basis for Class" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </content>
+      </TitledPane>
+   </top>
+   <bottom>
+      <HBox prefHeight="38.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnSave" mnemonicParsing="false" onAction="#actionSave" text="Save" />
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>

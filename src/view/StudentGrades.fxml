@@ -1,0 +1,685 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="564.0" prefWidth="1054.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <TitledPane prefHeight="75.0" prefWidth="933.0" text="Student Details" BorderPane.alignment="CENTER">
+         <content>
+            <VBox prefHeight="47.0" prefWidth="931.0">
+               <children>
+                  <HBox prefHeight="32.0" prefWidth="911.0" spacing="5.0">
+                     <children>
+                        <Label text="Name" />
+                        <TextField fx:id="txtFullname" prefHeight="25.0" prefWidth="400.0" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </content>
+      </TitledPane>
+   </top>
+   <center>
+      <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+        <tabs>
+          <Tab text="Grade 11">
+               <content>
+                  <HBox prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+                     <children>
+                        <VBox prefHeight="460.0" prefWidth="521.0">
+                           <children>
+                              <HBox prefHeight="30.0" prefWidth="790.0" spacing="10.0" VBox.vgrow="NEVER">
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                                 <children>
+                                    <Label layoutX="10.0" layoutY="10.0" text="SY" />
+                                    <TextField fx:id="txt1SY" layoutX="55.0" layoutY="10.0" prefHeight="25.0" prefWidth="111.0" />
+                                    <Label text="Strand" />
+                                    <TextField fx:id="txt1Strand" prefHeight="25.0" prefWidth="101.0" />
+                                    <Label layoutX="155.0" layoutY="10.0" text="Section" />
+                                    <TextField fx:id="txt1Section" layoutX="200.0" layoutY="10.0" prefHeight="25.0" prefWidth="101.0" />
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="373.0" prefWidth="704.0" VBox.vgrow="NEVER">
+                                 <children>
+                                    <TableView fx:id="tbl1Studentgrades" prefHeight="106.0" prefWidth="450.0" HBox.hgrow="ALWAYS">
+                                      <columns>
+                                        <TableColumn fx:id="col1No" prefWidth="39.0" />
+                                        <TableColumn fx:id="col1SubjCode" prefWidth="72.0" text="Code" />
+                                          <TableColumn fx:id="col1SubjDesc" prefWidth="244.0" text="Description" />
+                                          <TableColumn fx:id="col1SubjUnit" prefWidth="52.0" text="Unit" />
+                                          <TableColumn fx:id="col1Grade1" prefWidth="28.0" text="Q1" />
+                                          <TableColumn fx:id="col1Grade2" prefWidth="37.0" text="Q2" />
+                                          <TableColumn fx:id="col1FG" prefWidth="48.0" text="FG" />
+                                      </columns>
+                                    </TableView>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="41.0" prefWidth="521.0" spacing="5.0">
+                                 <children>
+                                    <Label text="GWA" />
+                                    <TextField fx:id="txt1GPA" editable="false" />
+                                    <Label text="Unit(s)" />
+                                    <TextField fx:id="txt1Unit" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="460.0" prefWidth="511.0">
+                           <children>
+                              <HBox prefHeight="30.0" prefWidth="790.0" spacing="10.0" VBox.vgrow="NEVER">
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                                 <children>
+                                    <Label layoutX="10.0" layoutY="10.0" text="SY" />
+                                    <TextField fx:id="txt2SY" layoutX="55.0" layoutY="10.0" prefHeight="25.0" prefWidth="111.0" />
+                                    <Label text="Strand" />
+                                    <TextField fx:id="txt2Strand" prefHeight="25.0" prefWidth="101.0" />
+                                    <Label layoutX="155.0" layoutY="10.0" text="Section" />
+                                    <TextField fx:id="txt2Section" layoutX="200.0" layoutY="10.0" prefHeight="25.0" prefWidth="101.0" />
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="373.0" prefWidth="704.0" VBox.vgrow="NEVER">
+                                 <children>
+                                    <TableView fx:id="tbl2Studentgrades" prefHeight="106.0" prefWidth="450.0" HBox.hgrow="ALWAYS">
+                                       <columns>
+                                          <TableColumn fx:id="col2No" prefWidth="39.0" />
+                                          <TableColumn fx:id="col2SubjCode" prefWidth="72.0" text="Code" />
+                                          <TableColumn fx:id="col2SubjDesc" prefWidth="244.0" text="Description" />
+                                          <TableColumn fx:id="col2SubjUnit" prefWidth="52.0" text="Unit" />
+                                          <TableColumn fx:id="col2Grade1" prefWidth="28.0" text="Q1" />
+                                          <TableColumn fx:id="col2Grade2" prefWidth="37.0" text="Q2" />
+                                          <TableColumn fx:id="col2FG" prefWidth="48.0" text="FG" />
+                                       </columns>
+                                    </TableView>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="44.0" prefWidth="511.0">
+                                 <children>
+                                    <Label text="GWA" />
+                                    <TextField fx:id="txt2GPA" editable="false" />
+                                    <Label text="Unit(s)" />
+                                    <TextField fx:id="txt2Unit" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </content>
+            </Tab>
+          <Tab text="Grade 12">
+               <content>
+                  <HBox prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+                     <children>
+                        <VBox prefHeight="460.0" prefWidth="521.0">
+                           <children>
+                              <HBox prefHeight="30.0" prefWidth="790.0" spacing="10.0" VBox.vgrow="NEVER">
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                                 <children>
+                                    <Label layoutX="10.0" layoutY="10.0" text="SY" />
+                                    <TextField fx:id="txt3SY" layoutX="55.0" layoutY="10.0" prefHeight="25.0" prefWidth="111.0" />
+                                    <Label text="Strand" />
+                                    <TextField fx:id="txt3Strand" prefHeight="25.0" prefWidth="101.0" />
+                                    <Label layoutX="155.0" layoutY="10.0" text="Section" />
+                                    <TextField fx:id="txt3Section" layoutX="200.0" layoutY="10.0" prefHeight="25.0" prefWidth="101.0" />
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="373.0" prefWidth="704.0" VBox.vgrow="NEVER">
+                                 <children>
+                                    <TableView fx:id="tbl3Studentgrades" prefHeight="106.0" prefWidth="450.0" HBox.hgrow="ALWAYS">
+                                       <columns>
+                                          <TableColumn fx:id="col3No" prefWidth="39.0" />
+                                          <TableColumn fx:id="col3SubjCode" prefWidth="72.0" text="Code" />
+                                          <TableColumn fx:id="col3SubjDesc" prefWidth="244.0" text="Description" />
+                                          <TableColumn fx:id="col3SubjUnit" prefWidth="52.0" text="Unit" />
+                                          <TableColumn fx:id="col3Grade1" prefWidth="28.0" text="Q1" />
+                                          <TableColumn fx:id="col3Grade2" prefWidth="37.0" text="Q2" />
+                                          <TableColumn fx:id="col3FG" prefWidth="48.0" text="FG" />
+                                       </columns>
+                                    </TableView>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="41.0" prefWidth="521.0" spacing="5.0">
+                                 <children>
+                                    <Label text="GWA" />
+                                    <TextField fx:id="txt3GPA" editable="false" />
+                                    <Label text="Unit(s)" />
+                                    <TextField fx:id="txt3Unit" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="460.0" prefWidth="511.0">
+                           <children>
+                              <HBox prefHeight="30.0" prefWidth="790.0" spacing="10.0" VBox.vgrow="NEVER">
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                                 <children>
+                                    <Label layoutX="10.0" layoutY="10.0" text="SY" />
+                                    <TextField fx:id="txt4SY" layoutX="55.0" layoutY="10.0" prefHeight="25.0" prefWidth="111.0" />
+                                    <Label text="Strand" />
+                                    <TextField fx:id="txt4Strand" prefHeight="25.0" prefWidth="101.0" />
+                                    <Label layoutX="155.0" layoutY="10.0" text="Section" />
+                                    <TextField fx:id="txt4Section" layoutX="200.0" layoutY="10.0" prefHeight="25.0" prefWidth="101.0" />
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="373.0" prefWidth="704.0" VBox.vgrow="NEVER">
+                                 <children>
+                                    <TableView fx:id="tbl4Studentgrades" prefHeight="106.0" prefWidth="450.0" HBox.hgrow="ALWAYS">
+                                       <columns>
+                                          <TableColumn fx:id="col4No" prefWidth="39.0" />
+                                          <TableColumn fx:id="col4SubjCode" prefWidth="72.0" text="Code" />
+                                          <TableColumn fx:id="col4SubjDesc" prefWidth="244.0" text="Description" />
+                                          <TableColumn fx:id="col4SubjUnit" prefWidth="52.0" text="Unit" />
+                                          <TableColumn fx:id="col4Grade1" prefWidth="28.0" text="Q1" />
+                                          <TableColumn fx:id="col4Grade2" prefWidth="37.0" text="Q2" />
+                                          <TableColumn fx:id="col4FG" prefWidth="48.0" text="FG" />
+                                       </columns>
+                                    </TableView>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="44.0" prefWidth="511.0">
+                                 <children>
+                                    <Label text="GWA" />
+                                    <TextField fx:id="txt4GPA" editable="false" />
+                                    <Label text="Unit(s)" />
+                                    <TextField fx:id="txt4Unit" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </content></Tab>
+            <Tab text="Summer">
+               <content>
+                  <HBox prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+                     <children>
+                        <VBox prefHeight="460.0" prefWidth="521.0">
+                           <children>
+                              <HBox prefHeight="40.0" prefWidth="521.0" />
+                              <HBox prefHeight="373.0" prefWidth="704.0" VBox.vgrow="NEVER">
+                                 <children>
+                                    <TableView fx:id="tblSummer" prefHeight="106.0" prefWidth="450.0" HBox.hgrow="ALWAYS">
+                                       <columns>
+                                          <TableColumn fx:id="colSummerNo" prefWidth="39.0" />
+                                          <TableColumn fx:id="colSummerSubjCode" prefWidth="72.0" text="Code" />
+                                          <TableColumn fx:id="colSummerSubjDesc" prefWidth="244.0" text="Description" />
+                                          <TableColumn fx:id="colSummerSubjUnit" prefWidth="52.0" text="Unit" />
+                                          <TableColumn fx:id="colSummerGrade1" prefWidth="28.0" text="Q1" />
+                                          <TableColumn fx:id="colSummerGrade2" prefWidth="37.0" text="Q2" />
+                                          <TableColumn fx:id="colSummerFG" prefWidth="48.0" text="FG" />
+                                       </columns>
+                                    </TableView>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </content></Tab>
+            <Tab text="Student Profile">
+               <content>
+                  <HBox prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+                     <children>
+                        <VBox prefHeight="427.0" prefWidth="1072.0">
+                           <children>
+                              <HBox layoutX="10.0" layoutY="20.0" prefHeight="30.0" prefWidth="790.0" spacing="10.0">
+                                 <children>
+                                    <Label layoutX="10.0" layoutY="10.0" prefHeight="17.0" prefWidth="40.0" text="Name">
+                                       <HBox.margin>
+                                          <Insets left="15.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <TextField fx:id="txtProfLname" prefHeight="25.0" prefWidth="200.0" />
+                                    <TextField fx:id="txtProfMname" layoutX="185.0" layoutY="10.0" prefHeight="25.0" prefWidth="200.0">
+                                       <HBox.margin>
+                                          <Insets left="15.0" />
+                                       </HBox.margin>
+                                    </TextField>
+                                    <TextField fx:id="txtProfFname" layoutX="348.0" layoutY="10.0" prefHeight="25.0" prefWidth="200.0">
+                                       <HBox.margin>
+                                          <Insets left="15.0" />
+                                       </HBox.margin>
+                                    </TextField>
+                                    <TextField fx:id="txtProfSuffix" layoutX="355.0" layoutY="10.0" prefHeight="25.0" prefWidth="100.0">
+                                       <HBox.margin>
+                                          <Insets left="15.0" />
+                                       </HBox.margin>
+                                    </TextField>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="15.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="55.0" prefHeight="30.0" prefWidth="790.0" spacing="10.0">
+                                 <children>
+                                    <Label layoutX="10.0" layoutY="10.0" prefHeight="17.0" prefWidth="200.0" text="Lastname">
+                                       <HBox.margin>
+                                          <Insets left="65.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label layoutX="75.0" layoutY="10.0" prefHeight="17.0" prefWidth="200.0" text="Middlename">
+                                       <HBox.margin>
+                                          <Insets left="15.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label layoutX="75.0" layoutY="10.0" prefHeight="17.0" prefWidth="200.0" text="Firstname">
+                                       <HBox.margin>
+                                          <Insets left="15.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label layoutX="285.0" layoutY="10.0" prefHeight="17.0" prefWidth="100.0" text="Suffix">
+                                       <HBox.margin>
+                                          <Insets left="15.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="85.0" prefHeight="30.0" prefWidth="790.0" spacing="10.0">
+                                 <children>
+                                    <Label layoutX="10.0" layoutY="10.0" prefHeight="17.0" prefWidth="190.0" text="Date of Birth (MM/DD/YYYY)">
+                                       <HBox.margin>
+                                          <Insets left="15.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <DatePicker fx:id="dpProf" prefHeight="25.0" prefWidth="200.0" />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="15.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="115.0" prefHeight="30.0" prefWidth="790.0" spacing="10.0">
+                                 <children>
+                                    <Label layoutX="10.0" layoutY="10.0" prefHeight="17.0" prefWidth="190.0" text="Date of Admission (MM/DD/YYYY)">
+                                       <HBox.margin>
+                                          <Insets left="15.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <DatePicker fx:id="dpAdmission" prefHeight="25.0" prefWidth="200.0" />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="5.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="145.0" prefHeight="30.0" prefWidth="790.0" spacing="10.0">
+                                 <children>
+                                    <Label layoutX="10.0" layoutY="10.0" prefHeight="17.0" prefWidth="190.0" text="LRN">
+                                       <HBox.margin>
+                                          <Insets left="15.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <TextField fx:id="txtProfLRN" layoutX="55.0" layoutY="10.0" prefHeight="25.0" prefWidth="200.0" />
+                                    <Label layoutX="25.0" layoutY="10.0" prefHeight="17.0" prefWidth="50.0" text="Gender" />
+                                    <ComboBox fx:id="cbProfGender" prefWidth="150.0" />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="5.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="175.0" prefHeight="30.0" prefWidth="790.0" spacing="10.0">
+                                 <children>
+                                    <Label layoutX="10.0" layoutY="10.0" prefHeight="17.0" prefWidth="190.0" text="Name of Junior High School">
+                                       <HBox.margin>
+                                          <Insets left="15.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <TextField fx:id="txtProfJHSchool" prefHeight="25.0" prefWidth="420.0" />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="15.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="205.0" prefHeight="30.0" prefWidth="790.0" spacing="10.0">
+                                 <children>
+                                    <Label layoutX="10.0" layoutY="10.0" prefHeight="17.0" prefWidth="190.0" text="Junior High School Address ">
+                                       <HBox.margin>
+                                          <Insets left="15.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <TextField fx:id="txtProfJHAddress" prefHeight="25.0" prefWidth="420.0" />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="5.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="235.0" prefHeight="30.0" prefWidth="790.0" spacing="10.0">
+                                 <children>
+                                    <Label layoutX="10.0" layoutY="10.0" prefHeight="17.0" prefWidth="190.0" text="Junior High School SY">
+                                       <HBox.margin>
+                                          <Insets left="15.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <TextField fx:id="txtProfJHSY" prefHeight="25.0" prefWidth="420.0" />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="5.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="265.0" prefHeight="30.0" prefWidth="790.0" spacing="10.0">
+                                 <children>
+                                    <Label layoutX="10.0" layoutY="10.0" prefHeight="17.0" prefWidth="190.0" text="Junior High School GPA">
+                                       <HBox.margin>
+                                          <Insets left="15.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <TextField fx:id="txtProfJHGPA" prefHeight="25.0" prefWidth="420.0" />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="5.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="295.0" prefHeight="30.0" prefWidth="790.0" spacing="10.0">
+                                 <children>
+                                    <Button mnemonicParsing="false" onAction="#actionUpdateProfile" text="Update Basic Profile">
+                                       <HBox.margin>
+                                          <Insets left="15.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="25.0" />
+                                 </VBox.margin>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </content></Tab>
+            <Tab text="Core Values &amp; Attendance">
+               <content>
+                  <HBox prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+                     <children>
+                        <VBox prefHeight="460.0" prefWidth="521.0">
+                           <children>
+                              <HBox prefHeight="30.0" prefWidth="790.0" spacing="10.0" VBox.vgrow="NEVER">
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                                 <children>
+                                    <Label layoutX="10.0" layoutY="10.0" text="Grade 11 Core Values &amp; Attendance" />
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="212.0" prefWidth="521.0" VBox.vgrow="NEVER">
+                                 <children>
+                                    <TableView fx:id="tblGrade11CoreValues" prefHeight="106.0" prefWidth="450.0" HBox.hgrow="ALWAYS">
+                                       <columns>
+                                          <TableColumn fx:id="colG11CvNo" prefWidth="39.0" />
+                                          <TableColumn fx:id="colG11CvDesc" prefWidth="306.0" text="Core Values" />
+                                          <TableColumn fx:id="colG11CvGrade1" prefWidth="42.0" text="Q1" />
+                                          <TableColumn fx:id="colG11CvGrade2" prefWidth="42.0" text="Q2" />
+                                          <TableColumn fx:id="colG11CvGrade3" prefWidth="43.0" text="Q3" />
+                                          <TableColumn fx:id="colG11CvGrade4" prefWidth="48.0" text="Q4" />
+                                       </columns>
+                                    </TableView>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="46.0" prefWidth="521.0" />
+                              <HBox prefHeight="191.0" prefWidth="521.0">
+                                 <children>
+                                    <TableView fx:id="tblGrade11Attendance" prefHeight="106.0" prefWidth="450.0" HBox.hgrow="ALWAYS">
+                                       <columns>
+                                          <TableColumn fx:id="colG11AttNo" prefWidth="39.0" />
+                                          <TableColumn fx:id="colG11AttDesc" prefWidth="65.0" text="Days" />
+                                          <TableColumn fx:id="colG11AttMonth6" prefWidth="33.0" text="JUN" />
+                                          <TableColumn fx:id="colG11AttMonth7" prefWidth="33.0" text="JUL" />
+                                          <TableColumn fx:id="colG11AttMonth8" prefWidth="33.0" text="AUG" />
+                                          <TableColumn fx:id="colG11AttMonth9" prefWidth="33.0" text="SEP" />
+                                          <TableColumn fx:id="colG11AttMonth10" prefWidth="33.0" text="OCT" />
+                                          <TableColumn fx:id="colG11AttMonth11" prefWidth="33.0" text="NOV" />
+                                          <TableColumn fx:id="colG11AttMonth12" prefWidth="33.0" text="DEC" />
+                                          <TableColumn fx:id="colG11AttMonth1" prefWidth="33.0" text="JAN" />
+                                          <TableColumn fx:id="colG11AttMonth2" prefWidth="33.0" text="FEB" />
+                                          <TableColumn fx:id="colG11AttMonth3" prefWidth="33.0" text="MAR" />
+                                          <TableColumn fx:id="colG11AttMonth4" prefWidth="33.0" text="APR" />
+                                          <TableColumn fx:id="colG11AttTotal" prefWidth="46.0" text="TOTAL" />
+                                       </columns>
+                                    </TableView>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="460.0" prefWidth="511.0">
+                           <children>
+                              <HBox prefHeight="30.0" prefWidth="790.0" spacing="10.0" VBox.vgrow="NEVER">
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                                 <children>
+                                    <Label layoutX="10.0" layoutY="10.0" text="Grade 12 Core Values &amp; Attendance" />
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="212.0" prefWidth="521.0">
+                                 <children>
+                                    <TableView fx:id="tblGrade12CoreValues" prefHeight="106.0" prefWidth="450.0" HBox.hgrow="ALWAYS">
+                                       <columns>
+                                          <TableColumn fx:id="colG12CvNo" prefWidth="39.0" />
+                                          <TableColumn fx:id="colG12CvDesc" prefWidth="306.0" text="Core Values" />
+                                          <TableColumn fx:id="colG12CvGrade1" prefWidth="42.0" text="Q1" />
+                                          <TableColumn fx:id="colG12CvGrade2" prefWidth="42.0" text="Q2" />
+                                          <TableColumn fx:id="colG12CvGrade3" prefWidth="43.0" text="Q3" />
+                                          <TableColumn fx:id="colG12CvGrade4" prefWidth="48.0" text="Q4" />
+                                       </columns>
+                                    </TableView>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="46.0" prefWidth="521.0" />
+                              <HBox prefHeight="191.0" prefWidth="521.0">
+                                 <children>
+                                    <TableView fx:id="tblGrade12Attendance" prefHeight="106.0" prefWidth="450.0" HBox.hgrow="ALWAYS">
+                                       <columns>
+                                          <TableColumn fx:id="colG12AttNo" prefWidth="39.0" />
+                                          <TableColumn fx:id="colG12AttDesc" prefWidth="65.0" text="Days" />
+                                          <TableColumn fx:id="colG12AttMonth6" prefWidth="33.0" text="JUN" />
+                                          <TableColumn fx:id="colG12AttMonth7" prefWidth="33.0" text="JUL" />
+                                          <TableColumn fx:id="colG12AttMonth8" prefWidth="33.0" text="AUG" />
+                                          <TableColumn fx:id="colG12AttMonth9" prefWidth="33.0" text="SEP" />
+                                          <TableColumn fx:id="colG12AttMonth10" prefWidth="33.0" text="OCT" />
+                                          <TableColumn fx:id="colG12AttMonth11" prefWidth="33.0" text="NOV" />
+                                          <TableColumn fx:id="colG12AttMonth12" prefWidth="33.0" text="DEC" />
+                                          <TableColumn fx:id="colG12AttMonth1" prefWidth="33.0" text="JAN" />
+                                          <TableColumn fx:id="colG12AttMonth2" prefWidth="33.0" text="FEB" />
+                                          <TableColumn fx:id="colG12AttMonth3" prefWidth="33.0" text="MAR" />
+                                          <TableColumn fx:id="colG12AttMonth4" prefWidth="33.0" text="APR" />
+                                          <TableColumn fx:id="colG12AttTotal" prefWidth="46.0" text="TOTAL" />
+                                       </columns>
+                                    </TableView>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </content>
+            </Tab>
+            <Tab text="Generation Details">
+               <content>
+                  <HBox prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+                     <children>
+                        <VBox prefHeight="427.0" prefWidth="1072.0">
+                           <children>
+                              <HBox prefHeight="30.0" prefWidth="790.0" spacing="10.0" VBox.vgrow="NEVER">
+                                 <VBox.margin>
+                                    <Insets top="5.0" />
+                                 </VBox.margin>
+                                 <children>
+                                    <Label layoutX="10.0" layoutY="10.0" prefHeight="17.0" prefWidth="99.0" text="TOR Generation">
+                                       <HBox.margin>
+                                          <Insets left="15.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="20.0" prefHeight="30.0" prefWidth="790.0" spacing="10.0">
+                                 <children>
+                                    <Label layoutX="10.0" layoutY="10.0" prefHeight="17.0" prefWidth="150.0" text="This student is elibile in this">
+                                       <HBox.margin>
+                                          <Insets left="15.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <TextField fx:id="txtGenDay" prefHeight="25.0" prefWidth="130.0" />
+                                    <Label layoutX="25.0" layoutY="10.0" prefHeight="17.0" prefWidth="13.0" text="of" />
+                                    <TextField fx:id="txtGenMonthYear" layoutX="185.0" layoutY="10.0" prefHeight="25.0" prefWidth="130.0" />
+                                    <Label layoutX="325.0" layoutY="10.0" prefHeight="17.0" prefWidth="87.0" text="for admission to" />
+                                    <TextField fx:id="txtGenAdmission" layoutX="348.0" layoutY="10.0" prefHeight="25.0" prefWidth="130.0" />
+                                    <Label layoutX="488.0" layoutY="10.0" prefHeight="17.0" prefWidth="318.0" text="and has no money or responsibility in this school." />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="5.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="55.0" prefHeight="30.0" prefWidth="790.0" spacing="10.0">
+                                 <children>
+                                    <Label layoutX="10.0" layoutY="10.0" prefHeight="17.0" prefWidth="150.0" text="Copy of this record sent to">
+                                       <HBox.margin>
+                                          <Insets left="15.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <TextField fx:id="txtGenReceiver" layoutX="55.0" layoutY="10.0" prefHeight="25.0" prefWidth="243.0" />
+                                    <Label text="on" />
+                                    <TextField fx:id="txtGenDateReceived" prefHeight="25.0" prefWidth="155.0" />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="85.0" prefHeight="30.0" prefWidth="790.0" spacing="10.0">
+                                 <children>
+                                    <Label layoutX="10.0" layoutY="10.0" prefHeight="17.0" prefWidth="150.0" text="Track/Strand Accomplished:">
+                                       <HBox.margin>
+                                          <Insets left="15.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <TextField fx:id="txtGenStrand" layoutX="55.0" layoutY="10.0" prefHeight="25.0" prefWidth="432.0" />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="15.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="115.0" prefHeight="30.0" prefWidth="790.0" spacing="10.0">
+                                 <children>
+                                    <Label layoutX="10.0" layoutY="10.0" prefHeight="17.0" prefWidth="150.0" text="Awards/Honors">
+                                       <HBox.margin>
+                                          <Insets left="15.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <TextField fx:id="txtGenAward" layoutX="55.0" layoutY="10.0" prefHeight="25.0" prefWidth="432.0" />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="5.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="145.0" prefHeight="30.0" prefWidth="790.0" spacing="10.0">
+                                 <children>
+                                    <Label layoutX="10.0" layoutY="10.0" prefHeight="17.0" prefWidth="150.0" text="Date of SHS Graduation">
+                                       <HBox.margin>
+                                          <Insets left="15.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <DatePicker fx:id="dpGraduation" prefHeight="25.0" prefWidth="200.0" />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="5.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="175.0" prefHeight="30.0" prefWidth="790.0" spacing="10.0">
+                                 <children>
+                                    <Label layoutX="10.0" layoutY="10.0" prefHeight="17.0" prefWidth="150.0" text="Report Card Generation">
+                                       <HBox.margin>
+                                          <Insets left="15.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="5.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="205.0" prefHeight="30.0" prefWidth="790.0" spacing="10.0">
+                                 <children>
+                                    <Label layoutX="10.0" layoutY="10.0" prefHeight="17.0" prefWidth="50.0" text="SY">
+                                       <HBox.margin>
+                                          <Insets left="15.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <ComboBox fx:id="cbGenSY" prefHeight="25.0" prefWidth="109.0" />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="5.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="235.0" prefHeight="30.0" prefWidth="790.0" spacing="10.0">
+                                 <children>
+                                    <Label layoutX="10.0" layoutY="10.0" prefHeight="17.0" prefWidth="50.0" text="Purpose">
+                                       <HBox.margin>
+                                          <Insets left="15.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <ComboBox fx:id="cbGenPurpose" prefHeight="25.0" prefWidth="109.0" />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="5.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="265.0" prefHeight="30.0" prefWidth="790.0" spacing="10.0">
+                                 <children>
+                                    <Label layoutX="10.0" layoutY="10.0" prefHeight="17.0" prefWidth="50.0">
+                                       <HBox.margin>
+                                          <Insets left="15.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <TextField fx:id="txtGenPurpose" prefHeight="25.0" prefWidth="320.0">
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </TextField>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="5.0" />
+                                 </VBox.margin>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </center>
+   <bottom>
+      <HBox prefHeight="33.0" prefWidth="1054.0" spacing="10.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#actionPrintTOR" text="Print TOR" />
+            <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#actionPrintEvaluationTOR" text="Print TOR (Evaluation)" />
+            <Label text="Grade level" />
+            <ComboBox fx:id="cbPrintGradelevel" prefHeight="25.0" prefWidth="74.0" />
+            <Label layoutX="87.0" layoutY="10.0" text="Sem" />
+            <ComboBox fx:id="cbPrintSem" layoutX="157.0" layoutY="10.0" prefHeight="25.0" prefWidth="74.0" />
+            <Button fx:id="btnPrintCard" mnemonicParsing="false" onAction="#actionPrintCardGrade" text="Print Card Grades" />
+            <Button fx:id="btnPrintCoreValues" layoutX="358.0" layoutY="10.0" mnemonicParsing="false" onAction="#actionPrintCoreValues" text="Print Core Values &amp; Attendance" />
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="500.0" styleClass="control-background" stylesheets="@../style/generic-theme.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ManageTermController">
+   <center>
+      <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="0.0" prefWidth="0.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="450.0" prefWidth="500.0">
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: white;">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="20.0" right="20.0" top="20.0" />
+                     </VBox.margin>
+                     <children>
+                        <HBox prefHeight="50.0" style="-fx-background-color: white;">
+                           <children>
+                              <Label prefHeight="50.0" text="Current School Year:">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label fx:id="lblSchoolYear" alignment="CENTER" prefHeight="100.0" prefWidth="460.0" text="2022-2023">
+                                 <font>
+                                    <Font size="36.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="108.0" prefHeight="100.0" prefWidth="460.0" style="-fx-background-color: white;">
+                           <children>
+                              <Button alignment="CENTER" mnemonicParsing="false" prefHeight="100.0" prefWidth="460.0" text="Open/Close School Year">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets bottom="15.0" left="30.0" right="30.0" top="15.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" style="-fx-background-color: white;">
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="10.0" />
+                     </VBox.margin>
+                     <children>
+                        <HBox prefHeight="50.0" style="-fx-background-color: white;">
+                           <children>
+                              <Label prefHeight="50.0" text="Enrollment Period for School Year:">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="5.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label fx:id="lblEnrollmentPeriod" alignment="CENTER" prefHeight="100.0" prefWidth="460.0" text="2022-2023">
+                                 <font>
+                                    <Font size="36.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="460.0" style="-fx-background-color: white;">
+                           <children>
+                              <Button alignment="CENTER" mnemonicParsing="false" prefHeight="100.0" prefWidth="460.0" text="Open/Close School Year">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets bottom="15.0" left="30.0" right="30.0" top="15.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+   </center>
+   <top>
+      <HBox prefHeight="47.0" prefWidth="937.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox fillHeight="false" prefHeight="47.0" prefWidth="1069.0" styleClass="hbox-header">
+               <children>
+                  <Label minHeight="-Infinity" prefHeight="50.0" prefWidth="937.0" text="Manage Term" textFill="#fcf7f7">
+                     <font>
+                        <Font name="Arial Black" size="24.0" />
+                     </font>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+   </top>
+</BorderPane>

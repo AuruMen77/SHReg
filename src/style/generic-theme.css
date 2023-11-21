@@ -1,0 +1,168 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 07 10, 19, 9:29:29 AM
+    Author     : ACER
+*/
+
+
+.search-field {
+    -fx-background-color: rgba(23, 169, 168, 1);
+    -fx-text-fill: rgba(255, 255, 247, 1);
+    
+    -fx-background-image: url('../images/search.png');
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: right center;
+    -fx-font-size: 18px;
+    -fx-background-size: 12%;
+}
+
+.hbox-top-background {
+
+    -fx-background-color: rgba(255, 255, 255, 1);
+}
+
+.logo-background {
+
+    -fx-background-color: rgba(28, 185, 176, 1);
+    -fx-border-style: solid;
+    -fx-border-width: 0 0 1px 0;
+    -fx-border-color: rgba(28, 185, 176, 1);
+}
+
+.hbox-title {
+    -fx-text-fill: rgba(51, 51, 51, .8);
+    -fx-font-size: 15px;
+    -fx-font-family: cursive;
+}
+
+.control-background {
+
+    -fx-background-color: rgba(0,0,102);
+    -fx-border-style: solid;
+    -fx-border-width: 0 0 1px 0;
+    -fx-border-color: rgba(0,0,102);
+}
+
+.hamburger-button {
+    -fx-background-image: url("../images/menu.png");
+    -fx-background-color: rgba(23, 169, 168, 1);
+}
+
+.open-menu {
+    -fx-background-image: url("../images/arrow.png");
+    -fx-background-color: rgba(23, 169, 168, 1);
+}
+
+.logout-button {
+    -fx-background-image: url("../images/logout.png");
+}
+
+.hamburger-button, .logout-button, .open-menu  {
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 80%;
+    -fx-background-position: center;
+    -fx-background-color: rgba(23, 169, 168, 1);
+}
+
+.hamburger-button:hover, .logout-button:hover, .open-menu:hover {
+    -fx-background-color: rgba(255, 255, 247, .2);
+}
+
+.sidebar-menu {
+
+    -fx-background-color: rgba(51, 50, 68, 1);
+}
+
+.menu-buttons {
+
+    -fx-text-fill: rgba(93, 93, 119, 1);
+    -fx-font-size: 16px;
+    -fx-background-color: rgba(51, 50, 68, 1);
+    -fx-border-color: transparent;
+    -fx-border-style: solid;
+    -fx-border-width: 0 0 0 5px;
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0;
+    -fx-alignment: center-left;
+}
+
+.menu-buttons:hover {
+
+    -fx-text-fill: rgba(156, 156, 168, 1);
+    -fx-background-color: rgba(44, 43, 61, 1);
+    -fx-border-style: solid;
+    -fx-border-width: 0 0 0 5px;
+    -fx-border-color: transparent transparent transparent rgba(29, 114, 107, 1);
+} 
+
+.menu-buttons-selected {
+
+    -fx-text-fill: rgba(156, 156, 168, 1);
+    -fx-background-color: rgba(44, 43, 61, 1);
+    -fx-border-style: solid;
+    -fx-border-width: 0 0 0 5px;
+    -fx-border-color: transparent transparent transparent rgba(29, 114, 107, 1);
+}
+
+.pane-user {
+
+    -fx-border-color: rgba(72, 78, 72, .5);
+    -fx-border-style: solid;
+    -fx-border-width: 0 0 1px 0;
+}
+
+.pane-user-text {
+
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 16px; 
+}
+
+.pane-user-pic {
+
+    -fx-background-radius: 5em;
+}
+
+.vbox-panel {
+
+    /*-fx-background-color: rgba(238, 238, 238, 1);*/
+    -fx-background-color: rgba(0,0,102);
+/*    -fx-border-style: solid;
+    -fx-border-width: 0 0 1px 0;
+    -fx-border-color: rgba(0,0,102);*/
+}
+
+.hbox-header {
+    -fx-background-color: rgba(0, 0, 0, 1);
+}
+
+/*.titled-pane {
+-fx-skin: "com.sun.javafx.scene.control.skin.TitledPaneSkin";    
+-fx-text-fill: -fx-text-base-color;
+-fx-border-color: rgba(0, 0, 0, 1);
+-fx-focus-color: transparent; -fx-background-color: green;
+-fx-skin: "com.sun.javafx.scene.control.skin.TitledPaneSkin";    
+-fx-collapsible: true;
+-fx-border-color: red;
+-fx-focus-color: transparent; -fx-background-color: green;
+}*/
+
+.titled-pane > .title {
+    -fx-background-color:rgba(0,0,102);
+    -fx-background-insets: 0, 1, 2;
+    -fx-background-radius: 3 3 0 0, 2 2 0 0, 1 1 0 0;
+    -fx-padding: 0.3333em 0.75em 0.3333em 0.75em; /* 4 9 4 9 */
+}
+
+.titled-pane > .title:hover {
+    -fx-color: -fx-hover-base;
+}
+
+.table {
+    /*-fx-background-color: lightblue;*/
+    -fx-background-color: -fx-table-cell-border-color, #616161;
+}

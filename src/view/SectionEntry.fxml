@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="153.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <TitledPane prefHeight="113.0" prefWidth="600.0" text="Section Details" BorderPane.alignment="CENTER">
+         <content>
+            <VBox prefHeight="85.0" prefWidth="598.0" spacing="5.0">
+               <children>
+                  <HBox prefHeight="35.0" prefWidth="578.0" spacing="5.0">
+                     <children>
+                        <Label text="SY" />
+                        <ComboBox fx:id="cbSY" prefWidth="150.0" />
+                        <Label text="Sem" />
+                        <ComboBox fx:id="cbSem" prefHeight="25.0" prefWidth="80.0" />
+                        <Label text="Gradelevel" />
+                        <ComboBox fx:id="cbGradelevel" prefHeight="25.0" prefWidth="80.0" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="35.0" prefWidth="578.0" spacing="5.0">
+                     <children>
+                        <Label text="Strand" />
+                        <ComboBox fx:id="cbStrand" prefHeight="25.0" prefWidth="132.0" />
+                        <Label text="Strandgroup" />
+                        <ComboBox fx:id="cbStrandgroup" prefHeight="25.0" prefWidth="53.0" />
+                        <Label text="Section" />
+                        <TextField fx:id="txtSection" prefHeight="25.0" prefWidth="198.0" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </content>
+      </TitledPane>
+   </top>
+   <bottom>
+      <HBox prefHeight="35.0" prefWidth="600.0" spacing="5.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnSave" mnemonicParsing="false" onAction="#actionSave" text="Save" />
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>
