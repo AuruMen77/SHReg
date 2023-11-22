@@ -5,8 +5,11 @@
  */
 package model;
 
+import java.util.List;
 import entity.ClearanceSysem;
+import entity.ClearanceOffice;
 import entity.ClearanceOfficeSysem;
+import entity.ClearanceHoldlist;
 import javafx.collections.ObservableList;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
@@ -24,6 +27,17 @@ public class ClearanceSysemModel {
     public int setSySemActive(String sy, Integer sem) {
         session = HibernateUtil.getSessionFactory().openSession();
         Transaction txn = session.beginTransaction();
+
+        Integer prevSem = 0;
+        String prevSy = "";
+        if (sem == 2) {
+            prevSem = 1;
+            prevSy = sy;
+        } else if (sem == 1) {
+            prevSem = 2;
+            prevSy = reduceSchoolYear(sy);
+        }
+
         int updateCount = 0;
         Integer isActive = 0;
         Integer sysem_id = 0;
@@ -67,12 +81,31 @@ public class ClearanceSysemModel {
                 updateCount = updateQuery.executeUpdate();
 
                 // adds the 10 offices in the clearance_office_sysem table
-                for (int i = 0; i <= 10; i++) {
+                for (int i = 1; i <= 10; i++) {
                     ClearanceOfficeSysem officeSysem = new ClearanceOfficeSysem();
                     officeSysem.setf_office(i);
                     officeSysem.setf_sysem(sysem_id);
-
                     session.save(officeSysem);
+                }
+
+                //Select the off_sysem_id for f_off_sysem;
+                List<Integer> getFOffSysemList = session.createQuery(
+                        "SELECT off_sysem_id FROM ClearanceOfficeSysem "
+                        + "WHERE f_sysem = :sysem_id", Integer.class)
+                        .setParameter("sysem_id", sysem_id).list();
+
+                for (Integer fOffSysemValue : getFOffSysemList) {
+                    Query insertToHoldlist = session.createSQLQuery(
+                            "INSERT INTO seniorhighdb.clearance_holdlist "
+                            + "(f_off_sysem, student_id, grade_level, remarks_hold, current_status) "
+                            + "SELECT :fOffSysem, stud_idnum, ss_yr_level, 'default hold', 'hold' "
+                            + "FROM sh_stud_strand a "
+                            + "WHERE a.ss_sy = :prevSy AND a.ss_sem = :prevSem")
+                            .setParameter("prevSy", prevSy)
+                            .setParameter("prevSem", prevSem)
+                            .setParameter("fOffSysem", fOffSysemValue);
+
+                    int rowsAffected = insertToHoldlist.executeUpdate();
                 }
             } else if (selectCount == 0) {
                 updateCount = 0;
@@ -89,4 +122,25 @@ public class ClearanceSysemModel {
         }
         return updateCount;
     }
+
+    public static String reduceSchoolYear(String sy) {
+        // Assuming the input format is "YYYY-YYYY"
+        String[] parts = sy.split("-");
+
+        if (parts.length == 2) {
+            int startYear = Integer.parseInt(parts[0]);
+            int endYear = Integer.parseInt(parts[1]);
+
+            // Reduce both start and end years by 1
+            startYear--;
+            endYear--;
+
+            // Format the result
+            return String.format("%d-%d", startYear, endYear);
+        } else {
+            // Handle invalid input format
+            return "Invalid input format";
+        }
+    }
+
 }

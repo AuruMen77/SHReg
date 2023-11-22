@@ -40,6 +40,7 @@
         <mapping class="entity.ShStudStrand"/>
         <mapping class="entity.ShFee2"/>
         <mapping class="entity.ClearanceSysem"/>
+        <mapping class="entity.ClearanceOffice"/>
         <mapping class="entity.ShAssessaccount"/>
         <mapping class="entity.ShCCorevalues"/>
         <mapping class="entity.ShCurriculumSem"/>
@@ -186,5 +187,6 @@
         <mapping class="entity.ShStudlistId"/>
         <mapping class="entity.ShClassInformation"/>
         <mapping class="entity.ClearanceOfficeSysem"/>
+        <mapping class="entity.ClearanceHoldlist"/>
     </session-factory>
 </hibernate-configuration>

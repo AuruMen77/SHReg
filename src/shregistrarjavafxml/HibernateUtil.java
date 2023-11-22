@@ -6,7 +6,6 @@
 package shregistrarjavafxml;
 
 //import javax.security.auth.login.Configuration;
-
 import entity.AppResults;
 import entity.Children;
 import entity.ClinicDates;
@@ -70,6 +69,8 @@ import entity.Strands;
 import entity.Tracks;
 import entity.ClearanceSysem;
 import entity.ClearanceOfficeSysem;
+import entity.ClearanceOffice;
+import entity.ClearanceHoldlist;
 import java.io.File;
 import java.util.Properties;
 import java.util.Scanner;
@@ -80,7 +81,6 @@ import org.hibernate.SessionFactory;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.service.ServiceRegistry;
-
 
 /**
  *
@@ -108,26 +108,27 @@ public class HibernateUtil {
 //    public static SessionFactory getSessionFactory() {
 //        return sessionFactory;
 //    }
-    
     private static SessionFactory sessionFactory = null;
- 
+
     public static SessionFactory getSessionFactory() {
-        try{
+        try {
             loadSessionFactory();
-        }catch(Exception e){
+        } catch (Exception e) {
             System.err.println("Exception while initializing hibernate util.. ");
             e.printStackTrace();
         }
         return sessionFactory;
     }
- 
-    public static void loadSessionFactory(){
- 
+
+    public static void loadSessionFactory() {
+
         Configuration configuration = new Configuration();
         configuration.configure("/hibernate.cfg.xml");
         configuration.addAnnotatedClass(AppResults.class);
         configuration.addAnnotatedClass(ClearanceSysem.class);
         configuration.addAnnotatedClass(ClearanceOfficeSysem.class);
+        configuration.addAnnotatedClass(ClearanceOffice.class);
+        configuration.addAnnotatedClass(ClearanceHoldlist.class);
         configuration.addAnnotatedClass(Children.class);
         configuration.addAnnotatedClass(ClinicDates.class);
         configuration.addAnnotatedClass(CoreValues.class);
@@ -161,7 +162,7 @@ public class HibernateUtil {
         configuration.addAnnotatedClass(ShClassInfo.class);
         configuration.addAnnotatedClass(ShConfirmation.class);
         configuration.addAnnotatedClass(ShCourse.class);
-        
+
         configuration.addAnnotatedClass(ShCourseList.class);
         configuration.addAnnotatedClass(ShCurrDtl.class);
         configuration.addAnnotatedClass(ShCurrHdr.class);
@@ -169,7 +170,7 @@ public class HibernateUtil {
         configuration.addAnnotatedClass(ShCurriculumDtl.class);
         configuration.addAnnotatedClass(ShCurriculumHdr.class);
         configuration.addAnnotatedClass(ShCurriculumSem.class);
-        
+
         configuration.addAnnotatedClass(ShDates.class);
         configuration.addAnnotatedClass(ShDays.class);
         configuration.addAnnotatedClass(ShDaysId.class);
@@ -193,7 +194,7 @@ public class HibernateUtil {
         ServiceRegistry srvcReg = new StandardServiceRegistryBuilder().applySettings(configuration.getProperties()).build();
         sessionFactory = configuration.buildSessionFactory(srvcReg);
     }
- 
+
 //    public static Session getSession() throws HibernateException {
 // 
 //        Session retSession=null;
