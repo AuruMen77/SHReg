@@ -163,13 +163,13 @@ public class ShStudStrand_ShStudlistModel {
             i++; 
         }
 
-        for(ShStudlist shStudlist: listStudentList){
-            //flush a batch of inserts and release memory:
-            session_.flush();
-            session_.clear();
-            session_.save(shStudlist);
-            i++;
-        }
+//        for(ShStudlist shStudlist: listStudentList){
+//            //flush a batch of inserts and release memory:
+//            session_.flush();
+//            session_.clear();
+//            session_.save(shStudlist);
+//            i++;
+//        }
 
         return success;
     }

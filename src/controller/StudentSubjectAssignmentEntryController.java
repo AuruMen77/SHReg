@@ -784,6 +784,7 @@ public class StudentSubjectAssignmentEntryController implements Initializable,Sh
     
     @FXML
     public void actionSaveSubjects(ActionEvent event) throws Exception {
+        System.out.println("HELLOOO");
         if (validateInput()) {
             boolean success;
             String sy = listStudentSubjects.get(0).getCsSy();
@@ -792,11 +793,12 @@ public class StudentSubjectAssignmentEntryController implements Initializable,Sh
 
             String cclassId = "";
 
-   
+            
 
             for(ShCClassStud shCClassStud: listStudentSubjects){
 
-                cclassId = shCClassStud.getClass_info_id()+ "_" + selectedShApplicant.getStudIdnum();
+                cclassId = shCClassStud.getCsCrsCode()+ "_" + selectedShApplicant.getStudIdnum() + "_" + txtGradelevel.getText() + '_' + txtSem.getText();
+                
 
                 ShCClassStud save_shCClassStud = new ShCClassStud();
                 save_shCClassStud.setCclassId(cclassId);
@@ -810,13 +812,29 @@ public class StudentSubjectAssignmentEntryController implements Initializable,Sh
 
                 listStudentSubject.add(save_shCClassStud);
             }
+            
+            ShStudStrand add_shStudStrand = new ShStudStrand();
+            String student_status = shStudStrand_ShStudlistModel.getStudentEnrollmentStatus(selectedShApplicant.getStudIdnum(), txtSY.getText());
+            this.str_student_status = student_status;
+            add_shStudStrand.setSsId(txtSY.getText() +"-"+ txtSem.getText() +"-"+ selectedShApplicant.getStudIdnum());
+            add_shStudStrand.setStudIdnum(selectedShApplicant.getStudIdnum());
+            add_shStudStrand.setStrandCode(cbStrand.getSelectionModel().getSelectedItem().toString());
+            add_shStudStrand.setStrandGroup(txtStrandgroup.getText().trim().toUpperCase());
+            add_shStudStrand.setSsYrLevel(Integer.parseInt(txtGradelevel.getText()));
+            add_shStudStrand.setSsStatus(student_status);
 
-            success = shCClassStudModelModel.saveStudentSubjects(sy, sem, selectedShApplicant.getStudIdnum(),listStudentSubject);
+            add_shStudStrand.setSsSy(txtSY.getText());
+            add_shStudStrand.setSsSem(Integer.parseInt(txtSem.getText()));
+
+            success = shCClassStudModelModel.saveStudentSubjects(sy, sem, selectedShApplicant.getStudIdnum(),listStudentSubject, add_shStudStrand);
             
             if(success==true){  
                 this.showMessage(success, "Successful", "Student subject assignment successful!", "Student subject assignment successful");
             }else{
                 this.showMessage(success, "Error", "Error", "Error occured");
+                
+                
+                
             }
         }       
         

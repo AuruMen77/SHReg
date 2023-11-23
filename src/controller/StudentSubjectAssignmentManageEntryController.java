@@ -247,6 +247,11 @@ public class StudentSubjectAssignmentManageEntryController implements Initializa
         success = shCClassStudModelModel.saveStudentIndividualSubject(txtSY.getText(), txtSem.getText(), 
                 selectedCustomEnrolledStudent.getStud_idnum(),listStudentSubject);
         
+        System.out.println("txtSY: " + txtSY.getText());
+        System.out.println("txtSem: " + txtSem.getText());
+        System.out.println("Student ID: " + selectedCustomEnrolledStudent.getStud_idnum());
+        System.out.println("List of Subjects: " + listStudentSubject);
+        
         if(success==true)
             this.showMessage(success, "Successful", "Add Individual Subject!", "Individual Subject is saved successfully");
         else

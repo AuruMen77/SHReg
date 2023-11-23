@@ -606,7 +606,7 @@ public class ShCClassStudModel {
     }
     
     
-    public boolean saveStudentSubjects(String csSy, String csSem, String csIdnum, ObservableList<ShCClassStud> listStudentSubject) {
+    public boolean saveStudentSubjects(String csSy, String csSem, String csIdnum, ObservableList<ShCClassStud> listStudentSubject, ShStudStrand shStudStrand) {
         session = HibernateUtil.getSessionFactory().openSession();
         Transaction txn = session.beginTransaction();
         boolean success = false;
@@ -621,16 +621,19 @@ public class ShCClassStudModel {
                     
             query.executeUpdate();
             
+              session.saveOrUpdate(shStudStrand);
+            
             for(ShCClassStud shCClassStud: listStudentSubject){
-                if ( i % 20 == 0 ) { //20, same as the JDBC batch size
-                    //flush a batch of inserts and release memory:
+             
                     session.flush();
                     session.clear();
-                }
-                
-                session.save(shCClassStud);
-                i++; 
+                    session.save(shCClassStud);
+                    i++; 
+    
+              
             }
+            
+            
            
             txn.commit();
             success = true;

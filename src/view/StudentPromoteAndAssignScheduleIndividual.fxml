@@ -38,7 +38,7 @@
                               <ComboBox fx:id="cbSection" prefHeight="25.0" prefWidth="104.0" />
                               <Label text="Student ID/Name" textFill="WHITE" />
                               <TextField fx:id="txtSearch" />
-                              <Button fx:id="btnSearch" mnemonicParsing="false" onAction="#actionSearchPromotionList" prefHeight="25.0" prefWidth="61.0" text="Seach" />
+                              <Button fx:id="btnSearch" mnemonicParsing="false" onAction="#actionSearchPromotionList" prefHeight="25.0" prefWidth="61.0" text="Search" />
                            </children>
                         </HBox>
                         <HBox prefHeight="517.0" prefWidth="1180.0">
